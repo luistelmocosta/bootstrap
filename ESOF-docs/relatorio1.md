@@ -53,8 +53,6 @@ Contactámos os criadores do projecto por e-mail, fazendo algumas perguntas que 
 <a name="ref2" href="https://moodle.up.pt/pluginfile.php/68505/mod_resource/content/2/ESOF-Requirements%20Engineering.pdf">2) Slides Moodle<br></a>
 <a name="ref3" href="https://http://getbootstrap.com/css/">3) Bootstrap CSS</a><br>
 <a name="ref4" href="https://github.com/twbs/bootstrap/graphs/commit-activity">4) Bootstrap - Commit Activity </a><br>
-<a name="ref5" href="https://github.com/jrfcabral/atom/blob/master/ESOF-docs/email1.md">5) Email de Kevin Sawicki</a>
-
 
 ####Trabalho realizado por:
 * Luís Costa - luistelmocosta@gmail.com / 200806068
