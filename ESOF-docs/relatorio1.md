@@ -26,17 +26,38 @@ Entretanto, a 29 de Outubro de 2014 [Mark Otto](https://github.com/mdo) anunciou
 
 <img src="res/exemplo.png" width="500 px" alt="Exemplo"/>
 
-#####Exemplo de uma webpage a utilizar Bootstrap framework no Mozilla Firefoxe (from Wikipedia)
+######Exemplo de uma webpage a utilizar Bootstrap framework no Mozilla Firefoxe (from Wikipedia)
 
-O Bootstrap é modular e consite 
+O Bootstrap é modular e consiste essencialmente numa serie de [LESS stylesheets](https://en.wikipedia.org/wiki/Less_%28stylesheet_language%29) que implementam as várias componentes da *toolkit*. 
+Uma stylesheet é uma forma de separação de apresentação e conteúdo para *web design* onde o [markup](https://en.wikipedia.org/wiki/Markup_language) (i.e., HTML ou XHTML) de uma página web contém o conteúdo e estrutura da página mas que não define o seu *visual layout*(estilo). Uma **stylesheet** chamada *bootstrap.less* inclui todos os *stylesheet component*. Cada *bootstrap developer* pode, assim, adaptar o próprio ficheiro, selecionando os componentes que querem utilizar no seu projecto.
+Ajustes são possíveis até uma extensão limitada atraveś de uma stylesheet de configuração "central". Modificações mais robustas são possíveis através de **LESS declarations**.
+Desde a versão 2.0, a configuração do Bootstrap tem também uma opção especial de "Customize" na documentação. Além disso, o *developer* escolhe as componentes que pretende e ajusta, se necessário, os valores das várias opções para as suas necessidades. O *package* subsquentemente gerado já inclui uma *stylesheet* CSS pré-feita. 
 
 
+ web style sheet is a form of separation of presentation and content for web design in which the markup (i.e., HTML or XHTML) of a webpage contains the page's semantic content and structure, but does not define its visual layout (style)
+
+##Análise crítica do Processo
  
-Muito provavelmente, a força locomotora e o que mais impulsionou este projecto foi o grande "boom" das aplicações Web nos dias de hoje. Bootstrap, foi ganhando admiradores e seguidores por todos os cantos do mundo, que não largaram os seus criadores que outrora eram meros twitter "nerds". Não subestimando o trabalho árduo e o engenho deste grupo, acreditamos que se criou um ambiente favorável para que as coisas progredissem naturalmente. 
+  Muito provavelmente, a força locomotora e o que mais impulsionou este projecto foi o grande "boom" das aplicações Web nos dias de hoje. Bootstrap, foi ganhando admiradores e seguidores por todos os cantos do mundo, que não largaram os seus criadores que outrora eram meros twitter "nerds". Não subestimando o trabalho árduo e o engenho deste grupo, acreditamos que se criou um ambiente favorável para que as coisas progredissem naturalmente. 
 Quanto ao processo de desenvolvimento, pensamos que possa ter sido seguido o modelo Waterfall, uma vez que, provavelmente não teriam deadlines ou milestones para apresentar resultados, assim como não lidavam com clientes directamente, pelo que não tinham uma pressão tão grande em elaborar testes ao código. Apesar de se tratar de um old-fashioned model de gerir processos, Waterfall teria muitas vantagens neste tipo de projectos. Através daquilo que conseguimos perceber, o Bootstrap sempre manteve distância com o cliente, com as pessoas que usufruem dos seus serviços. Não há um "quem", um "como", um "porquê", não havia obrigações de terem user stories e estarem constantemente em contacto com o cliente. Temos quase uma distinção hierárquica neste projecto, onde a core team continua a desenvolver as várias releases do projecto, a desenvolver novos templates, extensões; os vários contribuidores que vão exploranto e analisando possíveis bugs que são remetidos para alguém que trata dos pull requests e assim mantém o projecto actualizado e adaptado a todas as exigências que vão surgindo. Como referimos em cima, a estratégia dos fundadores deste projecto é simples e eficaz e em termos de custos, acreditamos ser bastante razoável. À imagem de quase todos os software open source dos dias de hoje, esta equipa conta com um lote enorme de pessoas que fazem o projecto evoluir, mas o que provavelmente marca Bootstrap como o projecto mais aliciante do GitHub é a maneira concisa e apurada com que se fazem chegar a todos os que desenvolvem em ambiente WEB; a todas as pessoas que programam em HTML, em CSS, JavaScript, Ruby e tantas outras linguagens de programação que são imprescindíveis nos dias de hoje. Cursos online usam bootstrap, livros aconselham bootstrap e referem-se a este projecto como uma dádiva. 
 Bootstrap ganhou uma relevância notória nos dias de hoje, muito por mérito da maneira como surgiram e como mantiveram um core group que prevalece nos dias de hoje. Junto com esta breve análise, apresentamos um conjunto de gŕaficos que mostram isso mesmo. Mark Otto, Jacob Thornton , "fat" e Chris Rebert continuam a fazer commits, insertions, deletions e mantêm homogeneidade ao longo dos anos. Desta observação pode-se concluir algo muito importante e fulcral nos dias de hoje, este e qualquer projecto nunca teria alcançado tamanho sucesso sem a perseverança e consistência deste grupo.
 
+<img src="res/commit.png" width="500 px" height="300 px" alt="Commit"/>
+
+Como podemos analisar pelo gráfico, o projecto ainda se encontra em desenvolvimento. A frequência de commits, embora bastante distante dos números de Abril (relembre-se que foi na altura do *deploy* da versão 4.0), continua a acontecer com alguma frequência. Estes dados são expectáveis porque olhamos para um projecto "terminado", cuja fase 4 está num estado alfa há mais de um ano. Corrobora-se pelo gráfico que os número de commits têm vindo a diminuir, sem perder a sua actividade, no entanto.
+
 Contactámos os criadores do projecto por e-mail, fazendo algumas perguntas que achamos oportunas para nos inserirmos um pouco mais por dentro do tema, contudo, até ao momento, não obtivemos resposta, pelo que, as conclusões que obtivémos podem, como é óbvio, não corresponder à verdade.
 
-Luís Telmo Costa
-Alexandre Ribeiro
+## Referências
+<a name="ref1" href="https://en.wikipedia.org/wiki/Bootstrap_%28front-end_framework%29">1) Bootstrap - Wikipedia</a><br>
+<a name="ref2" href="https://moodle.up.pt/pluginfile.php/68505/mod_resource/content/2/ESOF-Requirements%20Engineering.pdf">2) Slides Moodle<br></a>
+<a name="ref3" href="https://http://getbootstrap.com/css/">3) Bootstrap CSS</a><br>
+<a name="ref4" href="https://github.com/twbs/bootstrap/graphs/commit-activity">4) Bootstrap - Commit Activity </a><br>
+<a name="ref5" href="https://github.com/jrfcabral/atom/blob/master/ESOF-docs/email1.md">5) Email de Kevin Sawicki</a>
+
+
+####Trabalho realizado por:
+* Luís Costa - luistelmocosta@gmail.com / 200806068
+* Alexandre Ribeiro
+
+
