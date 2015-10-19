@@ -128,4 +128,3 @@ As milestones são muito importantes na gestão de um projecto, já que permite 
 <a name="ref3" href="alistapart.com/article/building-twitter-bootstrap">3) A list apart - Building Twitter Bootstrap</a><br>
 <a name="ref4" href="https://github.com/twbs/bootstrap/milestones">4) Bootstrap Milestones</a><br>
 <a name="ref5" href="https://github.com/twbs/bootstrap/pulse">5) Bootstrap Issues and Pull Requests</a>
-<a name="ref6" href="http://blog.atom.io/2014/04/25/ci-for-your-packages.html">6) Travis CI for packages</a>
