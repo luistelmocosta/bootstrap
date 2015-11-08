@@ -63,7 +63,7 @@ Um **processo** é um conjunto de tarefas que formam uma unidade executável. Pr
 
 ![](https://raw.githubusercontent.com/luistelmocosta/bootstrap/master/ESOF-docs/res/processview.png)
 
-Quanto à vista de processo no bootstrap, é do entender dos autores que o conjunto de atividades que são executadas no lado do cliente são as que possuem uma maior relevância, justificando-se a sua inclusão neste relatório, ainda que outras pudessem ser identificadas, nomeadamente no lado do servidor.<br>
+Quanto à vista de processo no bootstrap, é do entender dos autores que o conjunto de atividades que são executadas no lado do cliente são as que possuem uma maior relevância, justificando-se a sua inclusão neste relatório, ainda que outras pudessem ser identificadas, nomeadamente no lado do servidor.<br><br><br>
 
 #### Deployment View
 
@@ -71,8 +71,11 @@ Quanto à vista de processo no bootstrap, é do entender dos autores que o conju
 
 A vista física leva em conta os requisitos não-funcionais do sistema, tais como disponibilidade, confiabilidade (tolerância a falhas), desempenho (taxa de transferência) e escalabilidade. 
 Um diagrama de deployment permite mostrar de que modo os artefactos de um sistema são distribuídos em nós de hardware. Os artefactos de um sistema são manifestações físicas dos seus componentes de software, e relacionam-se com determinados componentes de hardware.
-É esperado que algumas das configurações fisicas sejam utilizadas: algumas para desenvolvimento e teste e outras para implantação (*deployment*). O mapeamento do software para os **nodes** precisa, portanto, ser altamente flexível e ter um impacto mínimo sobre o próprio código fonte.
+É esperado que algumas das configurações fisicas sejam utilizadas: algumas para desenvolvimento e teste e outras para implantação (*deployment*). O mapeamento do software para os **nodes** precisa, portanto, ser altamente flexível e ter um impacto mínimo sobre o próprio código fonte.<br>
 
+![](https://raw.githubusercontent.com/luistelmocosta/bootstrap/master/ESOF-docs/res/deploymentview.png)<br>
+
+Uma vez que em termos de *hardware* o *bootstrap* é todo *client-side* optámos por criar apenas um nó (device do utilizador).
 
 ----------
 
