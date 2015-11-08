@@ -75,7 +75,7 @@ Um diagrama de deployment permite mostrar de que modo os artefactos de um sistem
 
 ![](https://raw.githubusercontent.com/luistelmocosta/bootstrap/master/ESOF-docs/res/deploymentview.png)<br>
 
-Uma vez que em termos de *hardware* o *bootstrap* é todo *client-side* optámos por criar apenas um nó (device do utilizador).
+Uma vez que em termos de *hardware* o *bootstrap* é todo *client-side* optámos por criar apenas um nó (device do cliente).<br><br>
 
 ----------
 
