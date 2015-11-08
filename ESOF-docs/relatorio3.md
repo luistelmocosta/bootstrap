@@ -54,11 +54,8 @@ Para uma análise mais genérica, podemos dizer que a arquitecura de desenvolvim
 
 ##### <i class="icon-pencil"></i> Notação da vista de arquitectura
 
-<img src="res/archlview.png" width="500 px"alt="ArchView"/>
-<<<<<<< HEAD
+<img src="res/archview.png" width="500 px"alt="ArchView"/>
+
 =======
 
-
-
->>>>>>> 5f8614f4705d39f8af5bb7d9dc51af49b4bb893d
 
