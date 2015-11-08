@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 [ESOF] Relatório 3 - Arquitetura de Software
 ===================
 
@@ -29,3 +30,10 @@ A vista lógica, de maneira sucinta, é responsável por suportar os requisitos 
 Um diagrama de classes mostra um conjunto de classes e as suas relações lógicas: associação, uso, composição, herança, etc. Um conjunto de classes associadas podem ser agrupadas em categorias de classes. Os *class templates* focam-se em cada *class* individualmente, enfatizando as operações principais da classe e identificando as características principais de cada objecto. 
 
 ##### <i class="icon-pencil"></i> Notação da vista lógica
+=======
+#Engenharia de Software - Relatório 3
+
+##Bootstrap - Arquitetura de Software
+
+<img src="res/logo.png" width="500 px" alt="Bootstrap"/>
+>>>>>>> d66ddaf1dfec129e4e6bbfb2e136b075c5503e80
