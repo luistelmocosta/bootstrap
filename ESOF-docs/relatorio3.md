@@ -3,10 +3,19 @@
 
 <img src="res/logo.png" width="500 px" alt="Bootstrap"/>
 
+
+
+### Table of contents
+
+
+[TOC]
+
+
+
 ### <a name="introducao"></a>Introdução
 
 
-O objetivo deste relatório é a explicitação de alguns aspetos relativos à arquitetura do projeto Bootstrap, seguindo o [modelo de vistas 4+1](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model)[^modelo]. Ao longo do relatório serão mostrados alguns diagramas exemplificativos do funcionamento e implementação deste modelo.
+O objetivo deste relatório é a explicitação de alguns aspetos relativos à arquitetura do projeto Bootstrap, seguindo o [modelo de vistas 4+1](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model). Ao longo do relatório serão mostrados alguns diagramas exemplificativos do funcionamento e implementação deste modelo.
 
 ----------
 
@@ -115,12 +124,19 @@ Conclusão
 -------------------
 Este modelo "4+1" tem sido utilizado com sucesso em vários projectos grandes, cou ou sem algumas adaptações na sua terminologia. Este modelo permite que os varios *stakeholders* encontrem aquilo que querem saber sobre a arquitectura do software. *System Engineers* vão olhar para a arquitectura através da **vista física**, por seu lado, *end-users*, clientes, *data specialists* vão querer saber da **vista lógica** e por fim, *project managers*, ou equipas de manutenção de software vão prestar atenção na **vista de desenvolvimento**.
 
+### <a name="info"></a>Informações
+
+##### Autores:
+
+* Luís Telmo Costa - 200806068
+* José Carlos da Rocha Lima - ei10012
+* Alexandre Marques de Castro Ribeiro - ee12288
+
+Faculdade de Engenharia da Universidade do Porto - MIEIC
+
+2015-11-08
 
 
-### Table of contents
-
-
-[TOC]
 
 
 
