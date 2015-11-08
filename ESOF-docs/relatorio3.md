@@ -120,8 +120,7 @@ Este modelo "4+1" tem sido utilizado com sucesso em vários projectos grandes, c
 
 ### Table of contents
 
-
-[TOC]
+1. [Introdução][#Introdução]
 
 
 ### <a name="info"></a>Informações
