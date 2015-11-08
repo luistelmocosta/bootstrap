@@ -1,6 +1,8 @@
-<<<<<<< HEAD
+
 [ESOF] Relatório 3 - Arquitetura de Software
 ===================
+
+<img src="res/logo.png" width="500 px" alt="Bootstrap"/>
 
 O objetivo deste relatório é a explicitação de alguns aspetos relativos à arquitetura do projeto Bootstrap, seguindo o [modelo de vistas 4+1](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model)[^modelo]. Ao longo do relatório serão mostrados alguns diagramas exemplificativos do funcionamento e implementação deste modelo.
 
@@ -31,9 +33,5 @@ Um diagrama de classes mostra um conjunto de classes e as suas relações lógic
 
 ##### <i class="icon-pencil"></i> Notação da vista lógica
 =======
-#Engenharia de Software - Relatório 3
 
-##Bootstrap - Arquitetura de Software
 
-<img src="res/logo.png" width="500 px" alt="Bootstrap"/>
->>>>>>> d66ddaf1dfec129e4e6bbfb2e136b075c5503e80
