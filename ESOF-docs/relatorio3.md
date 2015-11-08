@@ -4,7 +4,9 @@
 
 <img src="res/logo.png" width="500 px" alt="Bootstrap"/>
 
-O objetivo deste relatório é a explicitação de alguns aspetos relativos à arquitetura do projeto Bootstrap, seguindo o [modelo de vistas 4+1](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model)[^modelo]. Ao longo do relatório serão mostrados alguns diagramas exemplificativos do funcionamento e implementação deste modelo.
+### <a name="introducao"></a>Introdução
+
+O objetivo deste relatório é a explicitação de alguns aspetos relativos à arquitetura do projeto Bootstrap, seguindo o [modelo de vistas 4+1](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model). Ao longo do relatório serão mostrados alguns diagramas exemplificativos do funcionamento e implementação deste modelo.
 
 ----------
 
