@@ -99,6 +99,28 @@ De salientar que este não é um processo linear e determinista que leva a uma a
 
 ##### **Da vista lógica para a vista de desenvolvimento**
 
+Uma classe normalmente é implementada como um módulo. Classes extensas são decompostas em multiplos *packages*. Conjuntos de classes que estão intimamente ligadas-*class categories*- são agrupadas em *subsystems*. Outros factores têm de ter tido em conta para a definição de *subsystems* como a organização da equipa, a magnitude do codigo (tipicamente de 5K a 20K SLOC por *subsystem*, o grau de reutilização e semelhança esperado e rigorosos príncipios de estratificação (questões de visibilidade), a política de lançamento e o gerenciamento de configuração. Portanto, geralmente acaba-se sempre com uma vista que não possui uma correspondência 1-1 com a vista lógica estabelecida. 
+As vistas lógicas e de desenvolvimento são muito proximas, mas têm diferentes preocupações. Está comprovado que quanto maior for o projecto, maior é a distância entre as vistas. 
+
+##### **A partir da vista de processo para a vista física**
+
+Processos e grupos de processos são mapeados para o hardware fisico disponível, em várias configurações, para teste ou *deployment*.
+
+Adaptação do Modelo
+-------------------
+
+Nem todos os projectos precisam de uma arquitectura de software com as "4+1" views. Vistas que são inúteis podem ser omitidas da descrição da arquitectura, como a vista fisica, se houver apenas um processador ou até mesmo a vista de processos se apenas existe um unico processo ou programa. Para um sistema muito pequeno, as semelhanças entre a vista de desenvolvimento e a vista lógica são tão grandes que não são necessárias descrições separadas. 
+
+Conclusão
+-------------------
+Este modelo "4+1" tem sido utilizado com sucesso em vários projectos grandes, cou ou sem algumas adaptações na sua terminologia. Este modelo permite que os varios *stakeholders* encontrem aquilo que querem saber sobre a arquitectura do software. *System Engineers* vão olhar para a arquitectura através da **vista física**, por seu lado, *end-users*, clientes, *data specialists* vão querer saber da **vista lógica** e por fim, *project managers*, ou equipas de manutenção de software vão prestar atenção na **vista de desenvolvimento**.
+
+
+
+### Table of contents
+
+
+[TOC]
 
 
 
