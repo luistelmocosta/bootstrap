@@ -35,6 +35,8 @@ Este uso de múltiplos pontos de vista permite abordar separadamente as preocupa
 A vista lógica, de maneira sucinta, é responsável por suportar os requisitos funcionais - o que o sistema deve providenciar em termos de serviços aos seus utilizadores. O sistema é decomposto com conjunto de abstrações essenciais, retiradas maioritariamente do domínio do nosso problema, na forma de *objects* ou *object classes*, que permitem explorar os principios da abstração, encapsulação e herança. Esta decomposição não é apenas essencial para uma análise funcional do sistema, mas permite também identificar os mecanismos mais comuns e retratar elementos valiosos que existem nas várias plataformas do projecto. Para representar a arquitectura lógica, usam-se *class diagrams* e *class templates*, também conhecida por *Rational/Booch approach*.
 Um diagrama de classes mostra um conjunto de classes e as suas relações lógicas: associação, uso, composição, herança, etc. Um conjunto de classes associadas podem ser agrupadas em categorias de classes. Os *class templates* focam-se em cada *class* individualmente, enfatizando as operações principais da classe e identificando as características principais de cada objecto. 
 
+![](https://raw.githubusercontent.com/luistelmocosta/bootstrap/master/ESOF-docs/res/logicalview.png)
+
 
 #### The Development View
 
