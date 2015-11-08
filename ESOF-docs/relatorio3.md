@@ -118,10 +118,6 @@ Conclusão
 Este modelo "4+1" tem sido utilizado com sucesso em vários projectos grandes, cou ou sem algumas adaptações na sua terminologia. Este modelo permite que os varios *stakeholders* encontrem aquilo que querem saber sobre a arquitectura do software. *System Engineers* vão olhar para a arquitectura através da **vista física**, por seu lado, *end-users*, clientes, *data specialists* vão querer saber da **vista lógica** e por fim, *project managers*, ou equipas de manutenção de software vão prestar atenção na **vista de desenvolvimento**.
 
 
-### Table of contents
-
-1. [Introdução][#Introdução]
-
 
 ### <a name="info"></a>Informações
 
