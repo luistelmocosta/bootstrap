@@ -1,8 +1,12 @@
-<<<<<<< HEAD
+
 [ESOF] Relatório 3 - Arquitetura de Software
 ===================
 
-O objetivo deste relatório é a explicitação de alguns aspetos relativos à arquitetura do projeto Bootstrap, seguindo o [modelo de vistas 4+1](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model)[^modelo]. Ao longo do relatório serão mostrados alguns diagramas exemplificativos do funcionamento e implementação deste modelo.
+<img src="res/logo.png" width="500 px" alt="Bootstrap"/>
+
+### <a name="introducao"></a>Introdução
+
+O objetivo deste relatório é a explicitação de alguns aspetos relativos à arquitetura do projeto Bootstrap, seguindo o [modelo de vistas 4+1](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model). Ao longo do relatório serão mostrados alguns diagramas exemplificativos do funcionamento e implementação deste modelo.
 
 ----------
 
@@ -31,9 +35,24 @@ Um diagrama de classes mostra um conjunto de classes e as suas relações lógic
 
 ##### <i class="icon-pencil"></i> Notação da vista lógica
 =======
-#Engenharia de Software - Relatório 3
 
-##Bootstrap - Arquitetura de Software
+<img src="res/logicalview.png" width="500 px"alt="LogicalView"/>
 
-<img src="res/logo.png" width="500 px" alt="Bootstrap"/>
->>>>>>> d66ddaf1dfec129e4e6bbfb2e136b075c5503e80
+
+A notação para a vista lógica é derivada da *Booch Notation*. O que torna as coisas consideravelmente mais simples é ter apenas em conta os items que são significantes a nível de arquitectura. Em particular, o número de adornos que possam existir a nível estrutural não são, de todo, importantes para este nível de *design*
+
+##### <i class="icon-folder-open"></i> Estilo para a vista lógica
+O estilo que se usa para a vista lógica é um *object oriented style*. O principal objectivo para o *design* correcto da vista lógica é tentar manter um único, coerente *object model* ao longo de todo o sistema, para evitar uma especialização prematura de classes e mecanismos.
+
+#### The Development View
+
+*Subsystem Decomposition*
+
+A arquitectura ou vista de desenvolvimento centra-se na organização modular do software no seu ambiente de desenvolvimento. O software é *packaged* em pequenos pedaços - *program libraries* ou *subsystems* -  que podem ser desenvolvidos por um ou um pequeno grupo de *developers*. Os *subsystems* são organizados numa hierarquia em camadas, sendo que, cada camada, providencia uma estreita e bem definida *interface* para as camadas acima dela. 
+A arquitectura de desenvolvimento de um sistema é representada por módulos e *subsystem diagrams*, mostrando relacionamentos de *export* e *import*. A arquitectura de desenvolvimento apenas pode ser completamente descrita quando dos os elementos do software forem identificados. É, no entanto, possível, listar todas as regras que regem a arquitectura de desenvolvimento: o particionamento, agrupamento, visibilidade. 
+Para uma análise mais genérica, podemos dizer que a arquitecura de desenvolvimento leva em conta requisitos internos, relacionados com a facilidade de desenvolvimento, gerenciamento de software, reuso, bem como restrições impostas pelo *toolset* ou a linguagem de programação. A vista de desenvolvimento serve de base para o conhecimento da exigência, para o planeamento de trabalho da equipa (ou ate mesmo da organização responsável), para a avaliação dos custos e planeamento, para monitorizar o progresso do projecto, portabilidade e segurança. É a base para o estabelecimento de uma linha de produto.
+
+##### <i class="icon-pencil"></i> Notação da vista de arquitectura
+
+<img src="res/archlview.png" width="500 px"alt="ArchView"/>
+
