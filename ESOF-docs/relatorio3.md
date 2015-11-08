@@ -37,11 +37,11 @@ Um diagrama de classes mostra um conjunto de classes e as suas relações lógic
 
 ![](https://raw.githubusercontent.com/luistelmocosta/bootstrap/master/ESOF-docs/res/logicalview.png)
 <br>
-No *bootstrap* a *logical view* está dividida em quatro partes:<br>
-	-**less** : contem os ficheiros de css não compliados que posteriormente se irão juntar no ficheiro **bootstrap.css**;<br>
-	-**fonts**: contem as fontes e icons utilizados pelo bootstrap;<br>
-	- **js**: contem os ficheiros todos de javascript não compilados que posteriormente se irão juntar no ficheiro **bootstrap.js**;<br>
-	- **dist**: contem os ficheiros compilados do bootstrap.<br>
+No *bootstrap* a *logical view* está dividida em quatro partes:<br><br>
+	-**less** : contem os ficheiros de css não compliados que posteriormente se irão juntar no ficheiro **bootstrap.css**;<br><br>
+	-**fonts**: contem as fontes e icons utilizados pelo bootstrap;<br><br>
+	- **js**: contem os ficheiros todos de javascript não compilados que posteriormente se irão juntar no ficheiro **bootstrap.js**;<br><br>
+	- **dist**: contem os ficheiros compilados do bootstrap.<br><br>
 
 
 #### The Development View
