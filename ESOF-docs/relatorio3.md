@@ -61,6 +61,9 @@ Para uma análise mais genérica, podemos dizer que a arquitecura de desenvolvim
 A arquitectura de processo tem em conta alguns dos requisitos não funcionais, como a *performance* e a disponbilidade. Aborda questões de simultaneidade e distribuição, da integridade do sistema, de tolerância a falhas, e como as principais abstrações da vista lógica se ajustam dentro da arquitectura de processo - em que segmento de controlo é executada uma operação relativa a um determinado objecto. A **vista de processo** pode ser descrita em vários níveis de abstração, cada nível com diferentes tipos de preocupações. 
 Um **processo** é um conjunto de tarefas que formam uma unidade executável. Processos representam a camada onde a arquitectura de processo pode ser tacticamente controlada (iniciada, recuperada, reconfigurada, desligada). Em adição, os processos podem ser replicados para uma maior distribuição da carga de processamento, ou para melhorar a disponibilidade.
 
+![](https://raw.githubusercontent.com/luistelmocosta/bootstrap/master/ESOF-docs/res/processview.png)
+
+Quanto à vista de processo no bootstrap, é do entender dos autores que o conjunto de atividades que são executadas no lado do cliente são as que possuem uma maior relevância, justificando-se a sua inclusão neste relatório, ainda que outras pudessem ser identificadas, nomeadamente no lado do servidor.<br>
 
 #### Deployment View
 
