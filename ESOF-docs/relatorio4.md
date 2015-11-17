@@ -7,4 +7,4 @@
 
 ### <a name="introducao"></a>Introdução
 
-O objetivo deste relatório é a análise dos processos de verificação e validação (V&V) seguidos no desenvolvimento do *Bootstrap*
+O objetivo deste relatório é a análise dos processos de verificação e validação (V&V) seguidos no desenvolvimento da framework *Bootstrap*, com a descrição de algumas das características deste projeto que digam respeito à aplicação desses processos.
