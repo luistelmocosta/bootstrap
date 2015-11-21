@@ -17,44 +17,47 @@ Finalmente, será realizado um exercício que consistirá na seleção de um bug
 
 [JSHint, A Static Code Analysis Tool for JavaScript](http://jshint.com/about/)
 
-JSHint is a community-driven tool to detect errors and potential problems in JavaScript code and to enforce your team's coding conventions. It is very flexible so you can easily adjust it to your particular coding guidelines and the environment you expect your code to execute in. JSHint is open source and will always stay this way.  O objectivo deste projecto é ajudar os desenvolvedores de JavaScript a escrever programas completos sem se preocuparem com *typos* ou *language gotchas* 
+JSHint é uma ferramenta que tem como finalidade detetar erros e potenciais problemas de código JavaScript, permitindo assim que os desenvolvedores se possam focar em escrever programas, não tendo a preocupação com alguns problemas como *typos* ou *language gotchas*. Uma das suas caracteristicas mais importantes é a sua flexibilidade que permite uma fácil adaptação a diferentes tipos de projetos.
 
 
 [Grunt - The JavaScript Task Runner](http://gruntjs.com/)
 
+Por que usar um *task runner*?
 
-Why use a task runner?
+Porque permite automatizar as tarefas repetitivas inerentes ao desenvolvimento de software como a minificação e compilação, poupando desta forma tempo e esforço a quem o desenvolve.
 
-In one word: automation. The less work you have to do when performing repetitive tasks like minification, compilation, unit testing, linting, etc, the easier your job becomes. After you've configured it through a Gruntfile, a task runner can do most of that mundane work for you—and your team—with basically zero effort.
 
 [PhantomJS](http://phantomjs.org/headless-testing.html)
 
-One major use case of PhantomJS is headless testing of web applications. It is suitable for general command-line based testing, within a precommit hook, and as part of a continuous integration system.
+O principal uso de PhantomJS é testar abstratamente aplicações web. Não é, em si, uma framework de testes mas sim usado para correr testes, através de um *test runner* apropriado.
+
 
 <img src="res/PhantomJS.png" width="500 px" alt="PhantomJS"/>
 
-#####Test Frameworks
 
-PhantomJS itself is not a test framework, it is only used to launch the tests via a suitable test runner.
+#####Test Frameworks
 
 The following table summarizes the list of various test frameworks and the corresponding test runners. If the framework does not need an external/third-party runner, it is marked as "built-in".
 
 
 [QUNIT](http://qunitjs.com/intro/)
 
-You probably know that testing is good, but the first hurdle to overcome when trying to write unit tests for client-side code is the lack of any actual units; JavaScript code is written for each page of a website or each module of an application and is closely intermixed with back-end logic and related HTML. In the worst case, the code is completely mixed with HTML, as inline events handlers.
-
-This is likely the case when no JavaScript library for some DOM abstraction is being used; writing inline event handlers is much easier than using the DOM APIs to bind those events. More and more developers are picking up a library such as jQuery to handle the DOM abstraction, allowing them to move those inline events to distinct scripts, either on the same page or even in a separate JavaScript file. However, putting the code into separate files doesn’t mean that it is ready to be tested as a unit.
-
-What is a unit anyway? In the best case, it is a pure function that you can deal with in some way — a function that always gives you the same result for a given input. This makes unit testing pretty easy, but most of the time you need to deal with side effects, which here means DOM manipulations. It’s still useful to figure out which units we can structure our code into and to build unit tests accordingly.
+QUnit é uma framework de testes para JavaScript. Surgiu pela necessidade de ter uma unidade de testes para código *client-side*. Por unidade de testes entenda-se um conjunto de funções que, dado um input, produz sempre o mesmo output.
 
 
 [JSCS](http://jscs.info/)
 
-JSCS is a code style linter for programmatically enforcing your style guide. You can configure JSCS for your project in detail using over 150 validation rules, including presets from popular style guides like jQuery, Airbnb, Google, and more. 
+JavaScript Code Style (JSCS) é uma ferramenta para detecção de anomalias no código JavaScript. Este tipo de ferramentas são particularmente úteis em linguagens de programação interpretadas, tal como o JavaScript.
+Permite a configuração em específico para um projecto, tendo disponível mais de 150 regras de validação, incluindo estilos populares pré-definidos como jQuery e Google.
+
 
 [jQuery](https://jquery.com/)
 
-#####What is jQuery?
+jQuery é a mais famosa e utilizada biblioteca de JavaScript. A sintaxe do jQuery foi desenvolvida com o intuito de tornar mais simples a navegação do documento HTML, a seleção de elementos DOM, a criação de animações, a manipulação de eventos e o desenvolvimento de aplicações AJAX.
+Entre as suas principais características destacam-se: resolução da incompatibilidade entre navegadores, redução de código, reutilização do código através de plugins e implementação segura de recursos das várias versões de CSS.
 
-jQuery is a fast, small, and feature-rich JavaScript library. It makes things like HTML document traversal and manipulation, event handling, animation, and Ajax much simpler with an easy-to-use API that works across a multitude of browsers. With a combination of versatility and extensibility, jQuery has changed the way that millions of people write JavaScript.
+#####Observação:
+
+Através da análise das ferramentas acima citadas, verifica-se que a equipa de desenvolvimento do Bootstrap tem preocupações no que diz respeito à eficácia do código desenvolvido assim como com a maneira como este é desenvolvido. Tentam automatizar tarefas e garantir que o código segue certas *guidelines* que o tornam menos propício a erros, assim como amplamente compatível.
+
+
