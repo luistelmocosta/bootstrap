@@ -43,6 +43,8 @@ A Isolabilidade refere-se à serparação de cada componente na criação de tes
 
 <img src="res/isol.png" width="500 px" alt="isol"/>
 > Ficheiros de teste disponiblizados pela equipa do *Bootstrap* para teste das componentes **affix**, **alert** e **button**.
+
+
 ####Separação de Responsabilidades:
 
 ####Heterogeneidade :
