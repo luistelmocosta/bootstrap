@@ -56,15 +56,15 @@ Permite a configuração em específico para um projecto, tendo disponível mais
 jQuery é a mais famosa e utilizada biblioteca de JavaScript. A sintaxe do jQuery foi desenvolvida com o intuito de tornar mais simples a navegação do documento HTML, a seleção de elementos DOM, a criação de animações, a manipulação de eventos e o desenvolvimento de aplicações AJAX.
 Entre as suas principais características destacam-se: resolução da incompatibilidade entre navegadores, redução de código, reutilização do código através de plugins e implementação segura de recursos das várias versões de CSS.
 
-#####Testabilidade:
+###Testabilidade:
 
 Iremos agora avaliar o quão testável o projeto *Bootstrap* é. Até que ponto é possível verificar e validar o mesmo em termos de implementação. É importante salientar que após uma análise do projeto podemos constatar que é utilizada a ferramenta *QUnit* que permite testar componentes da aplicação, através de testes unitários.
 
-###Controlabilidade:
+#####Controlabilidade:
 
 A controlabilidade está relacionada com o grau com que é possível controlar o estado de uma componente a ser testada. Uma vez que o estado de cada uma das componentes princípais do *Bootstrap* é independente, é possível criar testes unitários para testar o estado de cada uma destas separadamente.
 
-###Observabilidade:
+#####Observabilidade:
 
 
 
