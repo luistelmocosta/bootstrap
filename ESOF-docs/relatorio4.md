@@ -78,6 +78,10 @@ Na testabilidade de *software* a observabilidade é o grau com que é possível 
 <img src="res/testsuite.png" alt="testsuite"/>
 
 
+#####Isolabilidade:
+
+
+
 
 
 #####Observação:
