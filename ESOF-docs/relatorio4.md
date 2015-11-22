@@ -15,11 +15,46 @@ Numa segunda fase, serão apresentadas algumas estatísticas pertinentes relacio
 Finalmente, será realizado um exercício que consistirá na seleção de um bug report e na conceção de casos de teste que possam, eventualmente, conduzir à resolução do mesmo.
 
 
+###Testabilidade:
+
+Iremos agora avaliar o quão testável o projeto *Bootstrap* é. Até que ponto é possível verificar e validar o mesmo em termos de implementação. É importante salientar que após uma análise do projeto podemos constatar que é utilizada a ferramenta [QUnit](#qunit) que permite testar componentes da aplicação, através de testes unitários.
+
+#####Controlabilidade:
+
+A controlabilidade está relacionada com o grau com que é possível controlar o estado de uma componente a ser testada. Uma vez que o estado de cada uma das componentes princípais do *Bootstrap* é independente, é possível criar testes unitários para testar o estado de cada uma destas separadamente.
+
+#####Observabilidade:
+
+Na testabilidade de *software* a observabilidade é o grau com que é possível observar o resultado dos testes realizados. A equipa do *Bootstrap* criou um *plugin* de teste chamado *Test Suite* e recomenda correr este *plugin* de duas maneiras, através do [PhantomJS](#phantomjs) apartir do [Grunt](#grunt) ou através do *web browser* apatir de um *html* fornecido.
+
+***Test Suite* testado com *PhantomJS*:**
+
+<img src="res/PhantomJS.png" width="500 px" alt="PhantomJS"/>
+
+
+***Test Suite* testado com *Web Browser*:**
+
+<img src="res/testsuite.png" alt="testsuite"/>
+
+
+#####Isolabilidade:
+
+
+
+
+
+#####Observação:
+
+Através da análise das ferramentas acima citadas, verifica-se que a equipa de desenvolvimento do Bootstrap tem preocupações no que diz respeito à eficácia do código desenvolvido assim como com a maneira como este é desenvolvido. Tentam automatizar tarefas e garantir que o código segue certas *guidelines* que o tornam menos propício a erros, assim como amplamente compatível.
+
+-----
+#### Conceitos Importantes
+
 [JSHint, A Static Code Analysis Tool for JavaScript](http://jshint.com/about/)
 
 JSHint é uma ferramenta que tem como finalidade detetar erros e potenciais problemas de código JavaScript, permitindo assim que os desenvolvedores se possam focar em escrever programas, não tendo a preocupação com alguns problemas como *typos* ou *language gotchas*. Uma das suas caracteristicas mais importantes é a sua flexibilidade que permite uma fácil adaptação a diferentes tipos de projetos.
 
-
+<div id='grunt'/>
 [Grunt - The JavaScript Task Runner](http://gruntjs.com/)
 
 Por que usar um *task runner*?
@@ -56,37 +91,6 @@ Permite a configuração em específico para um projecto, tendo disponível mais
 jQuery é a mais famosa e utilizada biblioteca de JavaScript. A sintaxe do jQuery foi desenvolvida com o intuito de tornar mais simples a navegação do documento HTML, a seleção de elementos DOM, a criação de animações, a manipulação de eventos e o desenvolvimento de aplicações AJAX.
 Entre as suas principais características destacam-se: resolução da incompatibilidade entre navegadores, redução de código, reutilização do código através de plugins e implementação segura de recursos das várias versões de CSS.
 
-###Testabilidade:
-
-Iremos agora avaliar o quão testável o projeto *Bootstrap* é. Até que ponto é possível verificar e validar o mesmo em termos de implementação. É importante salientar que após uma análise do projeto podemos constatar que é utilizada a ferramenta [QUnit](#qunit) que permite testar componentes da aplicação, através de testes unitários.
-
-#####Controlabilidade:
-
-A controlabilidade está relacionada com o grau com que é possível controlar o estado de uma componente a ser testada. Uma vez que o estado de cada uma das componentes princípais do *Bootstrap* é independente, é possível criar testes unitários para testar o estado de cada uma destas separadamente.
-
-#####Observabilidade:
-
-Na testabilidade de *software* a observabilidade é o grau com que é possível observar o resultado dos testes realizados. A equipa do *Bootstrap* criou um *plugin* de teste chamado *Test Suite* e recomenda correr este *plugin* de duas maneiras, através do [PhantomJS](#phantomjs) ou através do *web browser* apatir de um *html* fornecido.
-
-***Test Suite* testado com *PhantomJS*:**
-
-<img src="res/PhantomJS.png" width="500 px" alt="PhantomJS"/>
-
-
-***Test Suite* testado com *Web Browser*:**
-
-<img src="res/testsuite.png" alt="testsuite"/>
-
-
-#####Isolabilidade:
-
-
-
-
-
-#####Observação:
-
-Através da análise das ferramentas acima citadas, verifica-se que a equipa de desenvolvimento do Bootstrap tem preocupações no que diz respeito à eficácia do código desenvolvido assim como com a maneira como este é desenvolvido. Tentam automatizar tarefas e garantir que o código segue certas *guidelines* que o tornam menos propício a erros, assim como amplamente compatível.
 
 
 ------------------
