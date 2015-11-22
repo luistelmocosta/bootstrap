@@ -39,6 +39,10 @@ Na testabilidade de *software* a observabilidade é o grau com que é possível 
 
 ####Isolabilidade:
 
+A Isolabilidade refere-se à serparação de cada componente na criação de testes unitários. Através da análise do repositório conseguimos ver que são criados ficheiros de teste independentes para cada uma das componentes do *Bootstrap*, existindo assim grande facilidade em testar as componentes sem depender de outras.
+
+<img src="res/isol.png" width="500 px" alt="isol"/>
+> Ficheiros de teste disponiblizados pela equipa do *Bootstrap* para teste das componentes **affix**, **alert** e **button**.
 ####Separação de Responsabilidades:
 
 ####Heterogeneidade :
