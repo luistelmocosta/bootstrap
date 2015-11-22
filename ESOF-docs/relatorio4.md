@@ -27,21 +27,26 @@ A controlabilidade está relacionada com o grau com que é possível controlar o
 
 Na testabilidade de *software* a observabilidade é o grau com que é possível observar o resultado dos testes realizados. A equipa do *Bootstrap* criou um *plugin* de teste chamado *Test Suite* e recomenda correr este *plugin* de duas maneiras, através do [PhantomJS](#phantomjs) apartir do [Grunt](#grunt) ou através do *web browser* apatir de um *html* fornecido.
 
-***Test Suite* testado com *PhantomJS*:**
+
 
 <img src="res/PhantomJS.png" width="500 px" alt="PhantomJS"/>
 
+>***Test Suite* testado com *PhantomJS*:**
 
-***Test Suite* testado com *Web Browser*:**
+
+
 
 <img src="res/testsuite.png" alt="testsuite"/>
+
+>***Test Suite* testado com *Web Browser*:**
 
 
 ####Isolabilidade:
 
 A Isolabilidade refere-se à serparação de cada componente na criação de testes unitários. Através da análise do repositório conseguimos ver que são criados ficheiros de teste independentes para cada uma das componentes do *Bootstrap*, existindo assim grande facilidade em testar as componentes sem depender de outras.
 
-<img src="res/isol.png" width="500 px" alt="isol"/>
+<img src="res/isol.png"  alt="isol"/>
+
 > Ficheiros de teste disponiblizados pela equipa do *Bootstrap* para teste das componentes **affix**, **alert** e **button**.
 
 
