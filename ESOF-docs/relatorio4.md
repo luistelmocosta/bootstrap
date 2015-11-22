@@ -42,7 +42,7 @@ The following table summarizes the list of various test frameworks and the corre
 
 [QUNIT](http://qunitjs.com/intro/)
 <div id='qunit'/>
-#QUnit é uma framework de testes para JavaScript. Surgiu pela necessidade de ter uma unidade de testes para código *client-side*. Por unidade de testes entenda-se um conjunto de funções que, dado um input, produz sempre o mesmo output.
+QUnit é uma framework de testes para JavaScript. Surgiu pela necessidade de ter uma unidade de testes para código *client-side*. Por unidade de testes entenda-se um conjunto de funções que, dado um input, produz sempre o mesmo output.
 
 
 [JSCS](http://jscs.info/)
