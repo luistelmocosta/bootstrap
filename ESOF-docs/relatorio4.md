@@ -39,7 +39,9 @@ Na testabilidade de *software* a observabilidade é o grau com que é possível 
 
 ####Isolabilidade:
 
+####Separação de Responsabilidades:
 
+####Heterogeneidade :
 
 
 
