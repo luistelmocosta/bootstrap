@@ -26,22 +26,22 @@ Por que usar um *task runner*?
 
 Porque permite automatizar as tarefas repetitivas inerentes ao desenvolvimento de software como a minificação e compilação, poupando desta forma tempo e esforço a quem o desenvolve.
 
-
+<div id='phantomjs'/>
 [PhantomJS](http://phantomjs.org/headless-testing.html)
 
 O principal uso de PhantomJS é testar abstratamente aplicações web. Não é, em si, uma framework de testes mas sim usado para correr testes, através de um *test runner* apropriado.
 
 
-<img src="res/PhantomJS.png" width="500 px" alt="PhantomJS"/>
+
 
 
 #####Test Frameworks
 
 The following table summarizes the list of various test frameworks and the corresponding test runners. If the framework does not need an external/third-party runner, it is marked as "built-in".
 
-
-[QUNIT](http://qunitjs.com/intro/)
 <div id='qunit'/>
+[QUNIT](http://qunitjs.com/intro/)
+
 QUnit é uma framework de testes para JavaScript. Surgiu pela necessidade de ter uma unidade de testes para código *client-side*. Por unidade de testes entenda-se um conjunto de funções que, dado um input, produz sempre o mesmo output.
 
 
@@ -66,7 +66,16 @@ A controlabilidade está relacionada com o grau com que é possível controlar o
 
 #####Observabilidade:
 
+Na testabilidade de *software* a observabilidade é o grau com que é possível observar o resultado dos testes realizados. A equipa do *Bootstrap* criou um *plugin* de teste chamado *Test Suite* e recomenda correr este *plugin* de duas maneiras, através do [PhantomJS](#phantomjs) ou através do *web browser* apatir de um *html* fornecido.
 
+############# *Test Suite* testado com *PhantomJS*:
+
+<img src="res/PhantomJS.png" width="500 px" alt="PhantomJS"/>
+
+
+############# *Test Suite* testado no *Web browser*:
+
+<img src="res/testsuite.png" width="500 px" alt="PhantomJS"/>
 
 
 
