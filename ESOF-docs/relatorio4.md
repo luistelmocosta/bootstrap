@@ -76,3 +76,14 @@ A controlabilidade está relacionada com o grau com que é possível controlar o
 Através da análise das ferramentas acima citadas, verifica-se que a equipa de desenvolvimento do Bootstrap tem preocupações no que diz respeito à eficácia do código desenvolvido assim como com a maneira como este é desenvolvido. Tentam automatizar tarefas e garantir que o código segue certas *guidelines* que o tornam menos propício a erros, assim como amplamente compatível.
 
 
+### <a name="info"></a>Informações
+
+##### Autores:
+
+* Luís Telmo Costa - 200806068
+* José Carlos da Rocha Lima - ei10012
+* Alexandre Marques de Castro Ribeiro - ee12288
+
+Faculdade de Engenharia da Universidade do Porto - MIEIC
+
+2015-11-22
