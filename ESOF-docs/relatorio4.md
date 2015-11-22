@@ -68,12 +68,12 @@ A controlabilidade está relacionada com o grau com que é possível controlar o
 
 Na testabilidade de *software* a observabilidade é o grau com que é possível observar o resultado dos testes realizados. A equipa do *Bootstrap* criou um *plugin* de teste chamado *Test Suite* e recomenda correr este *plugin* de duas maneiras, através do [PhantomJS](#phantomjs) ou através do *web browser* apatir de um *html* fornecido.
 
-#############Test Suite testado com *PhantomJS*:
+***Test Suite* testado com *PhantomJS*:**
 
 <img src="res/PhantomJS.png" width="500 px" alt="PhantomJS"/>
 
 
-#############*Test Suite* testado no *Web browser*:
+***Test Suite* testado com *Web Browser*:**
 
 <img src="res/testsuite.png" alt="testsuite"/>
 
