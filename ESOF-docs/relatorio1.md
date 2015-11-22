@@ -65,6 +65,6 @@ Contactámos os criadores do projecto por e-mail, fazendo algumas perguntas que 
 
 ####Trabalho realizado por:
 * Luís Costa - luistelmocosta@gmail.com / 200806068
-* Alexandre Ribeiro
+* Alexandre Ribeiro - ee12288@fe.up.pt / 201205024
 
 
