@@ -67,10 +67,21 @@ A Isolabilidade refere-se à serparação de cada componente na criação de tes
 > Ficheiros de teste disponiblizados pela equipa do *Bootstrap* para teste das componentes **affix**, **alert** e **button**.
 
 
-####Separação de Responsabilidades:
+#### Separação das responsabilidades de cada componentes
 
-####Heterogeneidade :
+Para uma verificação e validação de requisitos de software, a separação das responsabilidades de cada componente torna-se muito relevante e vantajosa. Uma classe/componente que assuma demasiadas responsabilidades ou que dependa de outras, torna-se sensível a erros e à introdução de falhas. Definir um teste de na maior abstração possível, faz com que seja possível fazer testes à sua funcionalidade e integridade de uma maneira eficaz.
 
+*Bootstrap* assenta numa estrutura modular composta por packages. Esses packages são responsáveis pela implementação de diversos componentes que permitem que o *software* esteja sempre no vigor das suas funcionalidades. Assim, o [*Bootstrap*](getbootstrap.com/), apresenta uma estrutura externa de responsabilidades altamente segmentadas e claramente definidas, reservando para si apenas o papel de gestor e coordenador das diferentes *packages* centrais ao funcionamento correcto do programa. 
+
+
+
+#### Compreensibilidade
+O [*Bootstrap*](https://getbootstrap.com/) está [bem documentado](http://getbootstrap.com/getting-started/), em parte devido à sua natureza *open-source*, que obriga a que a documentação seja explícita e concisa para que possa ser consultada e aprendida celeremente e compreendida pelo maior número de pessoas possível.
+
+A arquitetura do [*Bootstrap*](https://getbootstrap.com/) é complexa e algo extensa, resultando a sua cuidada separação de responsabilidades num leque alargado de classes cujos nomes e comportamento podem não resultar evidentes para um leigo no que a terminologia de editores de texto diga respeito. Posto isto, os autores do relatório consideram que existe, integrado no código, uma organização documental suficiente para suprir o problema descrito, e para permitir a quem o estuda uma compreensão adequada dos objetivos de cada componente, quer ao nível da classe quer ao nível dos métodos individuais. 
+
+#### Heterogeneidade
+No repositório do [*Bootstrap*](https://getbootstrap.com/) está disponível uma bateria de testes de tamanho considerável. 
 
 
 ####Observação:
