@@ -14,6 +14,23 @@ Numa segunda fase, serão apresentadas algumas estatísticas pertinentes relacio
 
 Finalmente, será realizado um exercício que consistirá na seleção de um bug report e na conceção de casos de teste que possam, eventualmente, conduzir à resolução do mesmo.
 
+## Bug Reports, Testes e Revisão de Código
+
+### Grau de Testabilidade
+
+Quanto à sua Testabilidade, o *bootstrap*, está muito bem organizado. O facto da sua arquitectura ser baseada em *packets* e classes, faz com que o projecto se torne mais modular e forneça assim, uma separação coerente, que permite que os testes se façam de uma maneira simples e eficaz. 
+
+De seguida, apresentamos e clarificamos algumas das características que permitem avaliar a testabilidade.
+
+Nas subsecções seguintes serão analisados em maior detalhe os vários aspetos que permitem avaliar as características de testabilidade.
+
+#### Controlabilidade dos componentes em estudo
+
+O Bootstrap apresenta uma organização de código e um paradigma de programação orientado ao objecto, recorrendo a todas as vantagens e capacidades que o *javascript* disponibiliza. A linguagem de programação utilizado fornece ferramentas preciosas para que haja uma manipulação rigorosa e correcta dos objetos instanciados bem como o valor neles guardados.
+Nota para os testes unitarios que são muito utilizados neste projecto e que têm como finalidade o estudo do comportamento de uma class e/ou objecto em particular, sendo criada vários tipo de abstrações, como veremos ao longo deste relatório.
+
+A nível intermédio também é possível salientar as capacidades de análise de comportamento fornecidas pelo [PhantomJS](#phantomjs), uma ferramenta **headless testing**. O principal uso de PhantomJS é testar abstratamente aplicações web. Não é, em si, uma framework de testes mas sim usado para correr testes, através de um *test runner* apropriado. Durante a execução do PhantomJS são corridas *test frameworks* como [JSCS](#jscs), [QUnit](#qunit), [JSHint](#jshint). 
+
 
 ###Testabilidade:
 
