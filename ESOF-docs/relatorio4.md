@@ -117,7 +117,7 @@ O principal uso de PhantomJS é testar abstratamente aplicações web. Não é, 
 <div id='travisci'/>
 [TravisCI](https://travis-ci.org/)
 
-É uma ferramenta utilizada para realizar testes de integração sobre o código submetido pelos colaboradores do projeto em pull requests. 
+É um serviço utilizado para construir projectos e realizar testes de integração sobre o código alojado no GitHub. Sempre que um commit é feito, esta ferramenta automaticamente tenta fazer *build* do projecto e seguidamente correr os testes.
 
 
 
