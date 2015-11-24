@@ -81,7 +81,14 @@ O [*Bootstrap*](https://getbootstrap.com/) está [bem documentado](http://getboo
 A arquitetura do [*Bootstrap*](https://getbootstrap.com/) é complexa e algo extensa, resultando a sua cuidada separação de responsabilidades num leque alargado de classes cujos nomes e comportamento podem não resultar evidentes para um leigo no que a terminologia de editores de texto diga respeito. Posto isto, os autores do relatório consideram que existe, integrado no código, uma organização documental suficiente para suprir o problema descrito, e para permitir a quem o estuda uma compreensão adequada dos objetivos de cada componente, quer ao nível da classe quer ao nível dos métodos individuais. 
 
 #### Heterogeneidade
-No repositório do [*Bootstrap*](https://getbootstrap.com/) está disponível uma bateria de testes de tamanho considerável. 
+
+Uma vez que o projecto é open-source e, consequentemente aberto a contribuições de vários colaboradores, é necessário garantir que, após a modificação do código, originada por um dado pull request, o sistema permanece globalmente funcional.
+
+Por um lado, a realização de testes unitários permite garantir o correto funcionamento dos componentes (isolados) da biblioteca. Por outro lado, é preciso averiguar o correcto funcionamento dos vários módulos constituintes do software, quando combinados, surgindo a necessidade de realizar testes de integração. Através da ferramenta Travis CI garante-se a automatização destes testes de integração.
+
+Pode assim concluir-se que a utilização de um repositório público do GitHub, aberto a vários colaboradores, resulta numa heterogeneidade das ferramentas de teste utilizadas.
+
+No repositório do [*Bootstrap*](https://getbootstrap.com/) está disponível uma sólido conjunto de testes.
 
 
 ####Observação:
@@ -107,7 +114,10 @@ Porque permite automatizar as tarefas repetitivas inerentes ao desenvolvimento d
 
 O principal uso de PhantomJS é testar abstratamente aplicações web. Não é, em si, uma framework de testes mas sim usado para correr testes, através de um *test runner* apropriado.
 
+<div id='travisci'/>
+[TravisCI](https://travis-ci.org/)
 
+É uma ferramenta utilizada para realizar testes de integração sobre o código submetido pelos colaboradores do projeto em pull requests. 
 
 
 
