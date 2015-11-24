@@ -86,6 +86,8 @@ Uma vez que o projecto é open-source e, consequentemente aberto a contribuiçõ
 
 Por um lado, a realização de testes unitários permite garantir o correto funcionamento dos componentes (isolados) da biblioteca. Por outro lado, é preciso averiguar o correcto funcionamento dos vários módulos constituintes do software, quando combinados, surgindo a necessidade de realizar testes de integração. Através da ferramenta Travis CI garante-se a automatização destes testes de integração.
 
+A passagem do código submetido nos testes é uma condição necessária (embora possam ser abertas algumas exceções) à sua aceitação por parte da core team.
+
 Pode assim concluir-se que a utilização de um repositório público do GitHub, aberto a vários colaboradores, resulta numa heterogeneidade das ferramentas de teste utilizadas.
 
 No repositório do [*Bootstrap*](https://getbootstrap.com/) está disponível uma sólido conjunto de testes.
@@ -117,7 +119,7 @@ O principal uso de PhantomJS é testar abstratamente aplicações web. Não é, 
 <div id='travisci'/>
 [TravisCI](https://travis-ci.org/)
 
-É um serviço utilizado para construir projectos e realizar testes de integração sobre o código alojado no GitHub. Sempre que um commit é feito, esta ferramenta automaticamente tenta fazer *build* do projecto e seguidamente correr os testes.
+É um serviço utilizado para construir projectos e realizar testes de integração sobre o código alojado no GitHub. Sempre que um commit e push são feitos, esta ferramenta automaticamente tenta fazer *build* do projecto e seguidamente correr os testes, de forma a possibilitar a adição, sem conflitos com outras partes do código, das novas funcionalidades. 
 
 
 
