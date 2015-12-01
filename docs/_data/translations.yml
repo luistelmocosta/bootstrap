@@ -1,8 +1,9 @@
 - name: Chinese
   code: zh
   description: Bootstrap 中文文档
-  url: http://v3.bootcss.com/
+  url: http://v4.bootcss.com/
 
+<<<<<<< HEAD
 - name: Chinese (Traditional)
   code: zh-TW
   description: Bootstrap 3 中文手冊
@@ -62,3 +63,9 @@
   code: vi
   description: Bootstrap bằng tiếng Việt
   url: http://getbootstrap.com.vn
+=======
+- name: Chinese
+  code: zh
+  description: Bootstrap 4 中文文档教程
+  url: http://boot4.com/
+>>>>>>> origin/v4-dev
