@@ -1,7 +1,11 @@
 {
   "name": "bootstrap",
   "description": "The most popular front-end framework for developing responsive, mobile first projects on the web.",
+<<<<<<< HEAD
   "version": "4.0.0-alpha",
+=======
+  "version": "3.3.6",
+>>>>>>> refs/remotes/origin/master
   "keywords": [
     "css",
     "sass",

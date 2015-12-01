@@ -1,5 +1,9 @@
 /*!
+<<<<<<< HEAD
  * Bootstrap v4.0.0-alpha (http://getbootstrap.com)
+=======
+ * Bootstrap v3.3.6 (http://getbootstrap.com)
+>>>>>>> refs/remotes/origin/master
  * Copyright 2011-2015 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
@@ -15,12 +19,20 @@ if (typeof jQuery === 'undefined') {
   }
 }(jQuery);
 
+<<<<<<< HEAD
 
 +function ($) {
 
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): util.js
+=======
+/* ========================================================================
+ * Bootstrap: transition.js v3.3.6
+ * http://getbootstrap.com/javascript/#transitions
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+>>>>>>> refs/remotes/origin/master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
@@ -89,8 +101,18 @@ var Util = (function ($) {
     return false;
   }
 
+<<<<<<< HEAD
   function transitionEndEmulator(duration) {
     var _this = this;
+=======
+/* ========================================================================
+ * Bootstrap: alert.js v3.3.6
+ * http://getbootstrap.com/javascript/#alerts
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+>>>>>>> refs/remotes/origin/master
 
     var called = false;
 
@@ -107,8 +129,12 @@ var Util = (function ($) {
     return this;
   }
 
+<<<<<<< HEAD
   function setTransitionEndSupport() {
     transition = transitionEndTest();
+=======
+  Alert.VERSION = '3.3.6'
+>>>>>>> refs/remotes/origin/master
 
     $.fn.emulateTransitionEnd = transitionEndEmulator;
 
@@ -269,11 +295,21 @@ var Alert = (function ($) {
 
       // private
 
+<<<<<<< HEAD
     }, {
       key: '_getRootElement',
       value: function _getRootElement(element) {
         var selector = Util.getSelectorFromElement(element);
         var parent = false;
+=======
+/* ========================================================================
+ * Bootstrap: button.js v3.3.6
+ * http://getbootstrap.com/javascript/#buttons
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+>>>>>>> refs/remotes/origin/master
 
         if (selector) {
           parent = $(selector)[0];
@@ -303,6 +339,7 @@ var Alert = (function ($) {
           return;
         }
 
+<<<<<<< HEAD
         $(element).one(Util.TRANSITION_END, $.proxy(this._destroyElement, this, element)).emulateTransitionEnd(TRANSITION_DURATION);
       }
     }, {
@@ -310,6 +347,9 @@ var Alert = (function ($) {
       value: function _destroyElement(element) {
         $(element).detach().trigger(Event.CLOSED).remove();
       }
+=======
+  Button.VERSION  = '3.3.6'
+>>>>>>> refs/remotes/origin/master
 
       // static
 
@@ -513,6 +553,7 @@ var Button = (function ($) {
       button = $(button).closest(Selector.BUTTON);
     }
 
+<<<<<<< HEAD
     Button._jQueryInterface.call($(button), 'toggle');
   }).on(Event.FOCUS_BLUR_DATA_API, Selector.DATA_TOGGLE_CARROT, function (event) {
     var button = $(event.target).closest(Selector.BUTTON)[0];
@@ -538,17 +579,28 @@ var Button = (function ($) {
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): carousel.js
+=======
+/* ========================================================================
+ * Bootstrap: carousel.js v3.3.6
+ * http://getbootstrap.com/javascript/#carousel
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+>>>>>>> refs/remotes/origin/master
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
 var Carousel = (function ($) {
 
+<<<<<<< HEAD
   /**
    * ------------------------------------------------------------------------
    * Constants
    * ------------------------------------------------------------------------
    */
+=======
+  Carousel.VERSION  = '3.3.6'
+>>>>>>> refs/remotes/origin/master
 
   var NAME = 'carousel';
   var VERSION = '4.0.0';
@@ -877,7 +929,17 @@ var Carousel = (function ($) {
 
             $(activeElement).removeClass(ClassName.ACTIVE).removeClass(direction).removeClass(directionalClassName);
 
+<<<<<<< HEAD
             _this3._isSliding = false;
+=======
+/* ========================================================================
+ * Bootstrap: collapse.js v3.3.6
+ * http://getbootstrap.com/javascript/#collapse
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+>>>>>>> refs/remotes/origin/master
 
             setTimeout(function () {
               return $(_this3._element).trigger(slidEvent);
@@ -896,6 +958,7 @@ var Carousel = (function ($) {
         }
       }
 
+<<<<<<< HEAD
       // static
 
     }], [{
@@ -930,6 +993,9 @@ var Carousel = (function ($) {
       key: '_dataApiClickHandler',
       value: function _dataApiClickHandler(event) {
         var selector = Util.getSelectorFromElement(this);
+=======
+  Collapse.VERSION  = '3.3.6'
+>>>>>>> refs/remotes/origin/master
 
         if (!selector) {
           return;
@@ -1261,9 +1327,19 @@ var Collapse = (function ($) {
         var parent = $(this._config.parent)[0];
         var selector = '[data-toggle="collapse"][data-parent="' + this._config.parent + '"]';
 
+<<<<<<< HEAD
         $(parent).find(selector).each(function (i, element) {
           _this6._addAriaAndCollapsedClass(Collapse._getTargetFromElement(element), [element]);
         });
+=======
+/* ========================================================================
+ * Bootstrap: dropdown.js v3.3.6
+ * http://getbootstrap.com/javascript/#dropdowns
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+>>>>>>> refs/remotes/origin/master
 
         return parent;
       }
@@ -1325,8 +1401,12 @@ var Collapse = (function ($) {
     return Collapse;
   })();
 
+<<<<<<< HEAD
   $(document).on(Event.CLICK_DATA_API, Selector.DATA_TOGGLE, function (event) {
     event.preventDefault();
+=======
+  Dropdown.VERSION = '3.3.6'
+>>>>>>> refs/remotes/origin/master
 
     var target = Collapse._getTargetFromElement(this);
     var data = $(target).data(DATA_KEY);
@@ -1577,7 +1657,17 @@ var Dropdown = (function ($) {
           return;
         }
 
+<<<<<<< HEAD
         var items = $.makeArray($(Selector.VISIBLE_ITEMS));
+=======
+/* ========================================================================
+ * Bootstrap: modal.js v3.3.6
+ * http://getbootstrap.com/javascript/#modals
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+>>>>>>> refs/remotes/origin/master
 
         items = items.filter(function (item) {
           return item.offsetWidth || item.offsetHeight;
@@ -1587,7 +1677,11 @@ var Dropdown = (function ($) {
           return;
         }
 
+<<<<<<< HEAD
         var index = items.indexOf(event.target);
+=======
+  Modal.VERSION  = '3.3.6'
+>>>>>>> refs/remotes/origin/master
 
         if (event.which === 38 && index > 0) {
           // up
@@ -1810,6 +1904,7 @@ var Modal = (function ($) {
           this._hideModal();
         }
       }
+<<<<<<< HEAD
     }, {
       key: 'dispose',
       value: function dispose() {
@@ -1830,6 +1925,138 @@ var Modal = (function ($) {
         this._originalBodyPadding = null;
         this._scrollbarWidth = null;
       }
+=======
+      $.support.transition && this.$element.hasClass('fade') ?
+        this.$backdrop
+          .one('bsTransitionEnd', callbackRemove)
+          .emulateTransitionEnd(Modal.BACKDROP_TRANSITION_DURATION) :
+        callbackRemove()
+
+    } else if (callback) {
+      callback()
+    }
+  }
+
+  // these following methods are used to handle overflowing modals
+
+  Modal.prototype.handleUpdate = function () {
+    this.adjustDialog()
+  }
+
+  Modal.prototype.adjustDialog = function () {
+    var modalIsOverflowing = this.$element[0].scrollHeight > document.documentElement.clientHeight
+
+    this.$element.css({
+      paddingLeft:  !this.bodyIsOverflowing && modalIsOverflowing ? this.scrollbarWidth : '',
+      paddingRight: this.bodyIsOverflowing && !modalIsOverflowing ? this.scrollbarWidth : ''
+    })
+  }
+
+  Modal.prototype.resetAdjustments = function () {
+    this.$element.css({
+      paddingLeft: '',
+      paddingRight: ''
+    })
+  }
+
+  Modal.prototype.checkScrollbar = function () {
+    var fullWindowWidth = window.innerWidth
+    if (!fullWindowWidth) { // workaround for missing window.innerWidth in IE8
+      var documentElementRect = document.documentElement.getBoundingClientRect()
+      fullWindowWidth = documentElementRect.right - Math.abs(documentElementRect.left)
+    }
+    this.bodyIsOverflowing = document.body.clientWidth < fullWindowWidth
+    this.scrollbarWidth = this.measureScrollbar()
+  }
+
+  Modal.prototype.setScrollbar = function () {
+    var bodyPad = parseInt((this.$body.css('padding-right') || 0), 10)
+    this.originalBodyPad = document.body.style.paddingRight || ''
+    if (this.bodyIsOverflowing) this.$body.css('padding-right', bodyPad + this.scrollbarWidth)
+  }
+
+  Modal.prototype.resetScrollbar = function () {
+    this.$body.css('padding-right', this.originalBodyPad)
+  }
+
+  Modal.prototype.measureScrollbar = function () { // thx walsh
+    var scrollDiv = document.createElement('div')
+    scrollDiv.className = 'modal-scrollbar-measure'
+    this.$body.append(scrollDiv)
+    var scrollbarWidth = scrollDiv.offsetWidth - scrollDiv.clientWidth
+    this.$body[0].removeChild(scrollDiv)
+    return scrollbarWidth
+  }
+
+
+  // MODAL PLUGIN DEFINITION
+  // =======================
+
+  function Plugin(option, _relatedTarget) {
+    return this.each(function () {
+      var $this   = $(this)
+      var data    = $this.data('bs.modal')
+      var options = $.extend({}, Modal.DEFAULTS, $this.data(), typeof option == 'object' && option)
+
+      if (!data) $this.data('bs.modal', (data = new Modal(this, options)))
+      if (typeof option == 'string') data[option](_relatedTarget)
+      else if (options.show) data.show(_relatedTarget)
+    })
+  }
+
+  var old = $.fn.modal
+
+  $.fn.modal             = Plugin
+  $.fn.modal.Constructor = Modal
+
+
+  // MODAL NO CONFLICT
+  // =================
+
+  $.fn.modal.noConflict = function () {
+    $.fn.modal = old
+    return this
+  }
+
+
+  // MODAL DATA-API
+  // ==============
+
+  $(document).on('click.bs.modal.data-api', '[data-toggle="modal"]', function (e) {
+    var $this   = $(this)
+    var href    = $this.attr('href')
+    var $target = $($this.attr('data-target') || (href && href.replace(/.*(?=#[^\s]+$)/, ''))) // strip for ie7
+    var option  = $target.data('bs.modal') ? 'toggle' : $.extend({ remote: !/#/.test(href) && href }, $target.data(), $this.data())
+
+    if ($this.is('a')) e.preventDefault()
+
+    $target.one('show.bs.modal', function (showEvent) {
+      if (showEvent.isDefaultPrevented()) return // only register focus restorer if modal will actually get shown
+      $target.one('hidden.bs.modal', function () {
+        $this.is(':visible') && $this.trigger('focus')
+      })
+    })
+    Plugin.call($target, option, this)
+  })
+
+}(jQuery);
+
+/* ========================================================================
+ * Bootstrap: tooltip.js v3.3.6
+ * http://getbootstrap.com/javascript/#tooltip
+ * Inspired by the original jQuery.tipsy by Jason Frame
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // TOOLTIP PUBLIC CLASS DEFINITION
+  // ===============================
+>>>>>>> refs/remotes/origin/master
 
       // private
 
@@ -1845,7 +2072,11 @@ var Modal = (function ($) {
       value: function _showElement(relatedTarget) {
         var _this8 = this;
 
+<<<<<<< HEAD
         var transition = Util.supportsTransitionEnd() && $(this._element).hasClass(ClassName.FADE);
+=======
+  Tooltip.VERSION  = '3.3.6'
+>>>>>>> refs/remotes/origin/master
 
         if (!this._element.parentNode || this._element.parentNode.nodeType !== Node.ELEMENT_NODE) {
           // don't move modals dom position
@@ -2691,6 +2922,7 @@ var Tab = (function ($) {
             $this.data(DATA_KEY, data);
           }
 
+<<<<<<< HEAD
           if (typeof config === 'string') {
             data[config]();
           }
@@ -2733,6 +2965,61 @@ var Tab = (function ($) {
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
+=======
+/* ========================================================================
+ * Bootstrap: popover.js v3.3.6
+ * http://getbootstrap.com/javascript/#popovers
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // POPOVER PUBLIC CLASS DEFINITION
+  // ===============================
+
+  var Popover = function (element, options) {
+    this.init('popover', element, options)
+  }
+
+  if (!$.fn.tooltip) throw new Error('Popover requires tooltip.js')
+
+  Popover.VERSION  = '3.3.6'
+
+  Popover.DEFAULTS = $.extend({}, $.fn.tooltip.Constructor.DEFAULTS, {
+    placement: 'right',
+    trigger: 'click',
+    content: '',
+    template: '<div class="popover" role="tooltip"><div class="arrow"></div><h3 class="popover-title"></h3><div class="popover-content"></div></div>'
+  })
+
+
+  // NOTE: POPOVER EXTENDS tooltip.js
+  // ================================
+
+  Popover.prototype = $.extend({}, $.fn.tooltip.Constructor.prototype)
+
+  Popover.prototype.constructor = Popover
+
+  Popover.prototype.getDefaults = function () {
+    return Popover.DEFAULTS
+  }
+
+  Popover.prototype.setContent = function () {
+    var $tip    = this.tip()
+    var title   = this.getTitle()
+    var content = this.getContent()
+
+    $tip.find('.popover-title')[this.options.html ? 'html' : 'text'](title)
+    $tip.find('.popover-content').children().detach().end()[ // we use append for html objects to maintain js events
+      this.options.html ? (typeof content == 'string' ? 'html' : 'append') : 'text'
+    ](content)
+
+    $tip.removeClass('fade top bottom left right in')
+>>>>>>> refs/remotes/origin/master
 
 var Tooltip = (function ($) {
 
@@ -2933,16 +3220,30 @@ var Tooltip = (function ($) {
       value: function show() {
         var _this16 = this;
 
+<<<<<<< HEAD
         var showEvent = $.Event(this.constructor.Event.SHOW);
+=======
+/* ========================================================================
+ * Bootstrap: scrollspy.js v3.3.6
+ * http://getbootstrap.com/javascript/#scrollspy
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+>>>>>>> refs/remotes/origin/master
 
         if (this.isWithContent() && this._isEnabled) {
           $(this.element).trigger(showEvent);
 
           var isInTheDom = $.contains(this.element.ownerDocument.documentElement, this.element);
 
+<<<<<<< HEAD
           if (showEvent.isDefaultPrevented() || !isInTheDom) {
             return;
           }
+=======
+  ScrollSpy.VERSION  = '3.3.6'
+>>>>>>> refs/remotes/origin/master
 
           var tip = this.getTipElement();
           var tipId = Util.getUID(this.constructor.NAME);
@@ -3157,10 +3458,20 @@ var Tooltip = (function ($) {
 
         context = context || $(event.currentTarget).data(dataKey);
 
+<<<<<<< HEAD
         if (!context) {
           context = new this.constructor(event.currentTarget, this._getDelegateConfig());
           $(event.currentTarget).data(dataKey, context);
         }
+=======
+/* ========================================================================
+ * Bootstrap: tab.js v3.3.6
+ * http://getbootstrap.com/javascript/#tabs
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+>>>>>>> refs/remotes/origin/master
 
         if (event) {
           context._activeTrigger[event.type === 'focusin' ? Trigger.FOCUS : Trigger.HOVER] = true;
@@ -3175,10 +3486,14 @@ var Tooltip = (function ($) {
 
         context._hoverState = HoverState.IN;
 
+<<<<<<< HEAD
         if (!context.config.delay || !context.config.delay.show) {
           context.show();
           return;
         }
+=======
+  Tab.VERSION = '3.3.6'
+>>>>>>> refs/remotes/origin/master
 
         context._timeout = setTimeout(function () {
           if (context._hoverState === HoverState.IN) {
@@ -3337,12 +3652,48 @@ var Tooltip = (function ($) {
   return Tooltip;
 })(jQuery);
 
+<<<<<<< HEAD
 /**
  * --------------------------------------------------------------------------
  * Bootstrap (v4.0.0): popover.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
+=======
+/* ========================================================================
+ * Bootstrap: affix.js v3.3.6
+ * http://getbootstrap.com/javascript/#affix
+ * ========================================================================
+ * Copyright 2011-2015 Twitter, Inc.
+ * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
+ * ======================================================================== */
+
+
++function ($) {
+  'use strict';
+
+  // AFFIX CLASS DEFINITION
+  // ======================
+
+  var Affix = function (element, options) {
+    this.options = $.extend({}, Affix.DEFAULTS, options)
+
+    this.$target = $(this.options.target)
+      .on('scroll.bs.affix.data-api', $.proxy(this.checkPosition, this))
+      .on('click.bs.affix.data-api',  $.proxy(this.checkPositionWithEventLoop, this))
+
+    this.$element     = $(element)
+    this.affixed      = null
+    this.unpin        = null
+    this.pinnedOffset = null
+
+    this.checkPosition()
+  }
+
+  Affix.VERSION  = '3.3.6'
+
+  Affix.RESET    = 'affix affix-top affix-bottom'
+>>>>>>> refs/remotes/origin/master
 
 var Popover = (function ($) {
 
