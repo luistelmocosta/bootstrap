@@ -21,6 +21,37 @@ module.exports = function (grunt) {
   var isTravis = require('is-travis');
   var npmShrinkwrap = require('npm-shrinkwrap');
   var mq4HoverShim = require('mq4-hover-shim');
+  var autoprefixer = require('autoprefixer')({
+    browsers: [
+      //
+      // Official browser support policy:
+      // http://v4-alpha.getbootstrap.com/getting-started/browsers-devices/#supported-browsers
+      //
+      'Chrome >= 35', // Exact version number here is kinda arbitrary
+      // Rather than using Autoprefixer's native "Firefox ESR" version specifier string,
+      // we deliberately hardcode the number. This is to avoid unwittingly severely breaking the previous ESR in the event that:
+      // (a) we happen to ship a new Bootstrap release soon after the release of a new ESR,
+      //     such that folks haven't yet had a reasonable amount of time to upgrade; and
+      // (b) the new ESR has unprefixed CSS properties/values whose absence would severely break webpages
+      //     (e.g. `box-sizing`, as opposed to `background: linear-gradient(...)`).
+      //     Since they've been unprefixed, Autoprefixer will stop prefixing them,
+      //     thus causing them to not work in the previous ESR (where the prefixes were required).
+      'Firefox >= 31', // Current Firefox Extended Support Release (ESR)
+      // Note: Edge versions in Autoprefixer & Can I Use refer to the EdgeHTML rendering engine version,
+      // NOT the Edge app version shown in Edge's "About" screen.
+      // For example, at the time of writing, Edge 20 on an up-to-date system uses EdgeHTML 12.
+      // See also https://github.com/Fyrd/caniuse/issues/1928
+      'Edge >= 12',
+      'Explorer >= 9',
+      // Out of leniency, we prefix these 1 version further back than the official policy.
+      'iOS >= 8',
+      'Safari >= 8',
+      // The following remain NOT officially supported, but we're lenient and include their prefixes to avoid severely breaking in them.
+      'Android 2.3',
+      'Android >= 4',
+      'Opera >= 12'
+    ]
+  });
 
   var generateCommonJSModule = require('./grunt/bs-commonjs-generator.js');
   var configBridge = grunt.file.readJSON('./grunt/configBridge.json', { encoding: 'utf8' });
@@ -46,8 +77,8 @@ module.exports = function (grunt) {
                  '}\n',
     jqueryVersionCheck: '+function ($) {\n' +
                         '  var version = $.fn.jquery.split(\' \')[0].split(\'.\')\n' +
-                        '  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1)) {\n' +
-                        '    throw new Error(\'Bootstrap\\\'s JavaScript requires jQuery version 1.9.1 or higher\')\n' +
+                        '  if ((version[0] < 2 && version[1] < 9) || (version[0] == 1 && version[1] == 9 && version[2] < 1) || (version[0] >= 3)) {\n' +
+                        '    throw new Error(\'Bootstrap\\\'s JavaScript requires at least jQuery v1.9.1 but less than v3.0.0\')\n' +
                         '  }\n' +
                         '}(jQuery);\n\n',
 
@@ -185,7 +216,7 @@ module.exports = function (grunt) {
           warnings: false
         },
         mangle: true,
-        preserveComments: 'some'
+        preserveComments: /^!|@preserve|@license|@cc_on/i
       },
       core: {
         src: '<%= concat.bootstrap.dest %>',
@@ -208,45 +239,37 @@ module.exports = function (grunt) {
     scsslint: {
       options: {
         bundleExec: true,
-        config: 'scss/.scsslint.yml',
+        config: 'scss/.scss-lint.yml',
         reporterOutput: null
       },
       src: ['scss/*.scss', '!scss/_normalize.scss']
     },
 
     postcss: {
-      options: {
-        map: true,
-        processors: [mq4HoverShim.postprocessorFor({ hoverSelectorPrefix: '.bs-true-hover ' })]
-      },
-      core: {
-        src: 'dist/css/*.css'
-      }
-    },
-
-    autoprefixer: {
-      options: {
-        browsers: [
-          'Android 2.3',
-          'Android >= 4',
-          'Chrome >= 35',
-          'Firefox >= 31',
-          'Explorer >= 9',
-          'iOS >= 7',
-          'Opera >= 12',
-          'Safari >= 7.1'
-        ]
-      },
       core: {
         options: {
-          map: true
+          map: true,
+          processors: [
+            mq4HoverShim.postprocessorFor({ hoverSelectorPrefix: '.bs-true-hover ' }),
+            autoprefixer
+          ]
         },
         src: 'dist/css/*.css'
       },
       docs: {
+        options: {
+          processors: [
+            autoprefixer
+          ]
+        },
         src: 'docs/assets/css/docs.min.css'
       },
       examples: {
+        options: {
+          processors: [
+            autoprefixer
+          ]
+        },
         expand: true,
         cwd: 'docs/examples/',
         src: ['**/*.css'],
@@ -261,7 +284,7 @@ module.exports = function (grunt) {
         compatibility: 'ie9',
         keepSpecialComments: '*',
         sourceMap: true,
-        noAdvanced: true
+        advanced: false
       },
       core: {
         files: [
@@ -275,15 +298,7 @@ module.exports = function (grunt) {
         ]
       },
       docs: {
-<<<<<<< HEAD
-        src: [
-          'docs/assets/css/ie10-viewport-bug-workaround.css',
-          'docs/assets/css/src/pygments-manni.css',
-          'docs/assets/css/src/docs.css'
-        ],
-=======
         src: 'docs/assets/css/docs.min.css',
->>>>>>> origin/v4-dev
         dest: 'docs/assets/css/docs.min.css'
       }
     },
@@ -333,7 +348,8 @@ module.exports = function (grunt) {
     jekyll: {
       options: {
         bundleExec: true,
-        config: '_config.yml'
+        config: '_config.yml',
+        incremental: false
       },
       docs: {},
       github: {
@@ -346,21 +362,15 @@ module.exports = function (grunt) {
     htmllint: {
       options: {
         ignore: [
-<<<<<<< HEAD
-          'Attribute "autocomplete" not allowed on element "button" at this point.',
-          'Attribute "autocomplete" is only allowed when the input type is "color", "date", "datetime", "datetime-local", "email", "month", "number", "password", "range", "search", "tel", "text", "time", "url", or "week".',
-          'Element "img" is missing required attribute "src".'
-=======
           'Element “img” is missing required attribute “src”.',
           'Attribute “autocomplete” is only allowed when the input type is “color”, “date”, “datetime”, “datetime-local”, “email”, “month”, “number”, “password”, “range”, “search”, “tel”, “text”, “time”, “url”, or “week”.',
           'Attribute “autocomplete” not allowed on element “button” at this point.',
           'Element “div” not allowed as child of element “progress” in this context. (Suppressing further errors from this subtree.)',
           'Consider using the “h1” element as a top-level heading only (all “h1” elements are treated as top-level headings by many screen readers and other tools).',
           'The “datetime” input type is not supported in all browsers. Please be sure to test, and consider using a polyfill.'
->>>>>>> origin/v4-dev
         ]
       },
-      src: '_gh_pages/**/*.html'
+      src: ['_gh_pages/**/*.html', 'js/tests/visual/*.html']
     },
 
     watch: {
@@ -375,17 +385,6 @@ module.exports = function (grunt) {
       docs: {
         files: 'docs/assets/scss/**/*.scss',
         tasks: ['dist-css', 'docs']
-      }
-    },
-
-    sed: {
-      versionNumber: {
-        pattern: (function () {
-          var old = grunt.option('oldver');
-          return old ? RegExp.quote(old) : old;
-        })(),
-        replacement: grunt.option('newver'),
-        recursive: true
       }
     },
 
@@ -421,7 +420,27 @@ module.exports = function (grunt) {
           branch: 'gh-pages'
         }
       }
+    },
+
+    compress: {
+      main: {
+        options: {
+          archive: 'bootstrap-<%= pkg.version %>-dist.zip',
+          mode: 'zip',
+          level: 9,
+          pretty: true
+        },
+        files: [
+          {
+            expand: true,
+            cwd: 'dist/',
+            src: ['**'],
+            dest: 'bootstrap-<%= pkg.version %>-dist'
+          }
+        ]
+      }
     }
+
   });
 
 
@@ -482,18 +501,13 @@ module.exports = function (grunt) {
   // grunt.registerTask('sass-compile', ['sass:core', 'sass:extras', 'sass:docs']);
   grunt.registerTask('sass-compile', ['sass:core', 'sass:docs']);
 
-  grunt.registerTask('dist-css', ['sass-compile', 'postcss:core', 'autoprefixer:core', 'csscomb:dist', 'cssmin:core', 'cssmin:docs']);
+  grunt.registerTask('dist-css', ['sass-compile', 'postcss:core', 'csscomb:dist', 'cssmin:core', 'cssmin:docs']);
 
   // Full distribution task.
   grunt.registerTask('dist', ['clean:dist', 'dist-css', 'dist-js']);
 
   // Default task.
   grunt.registerTask('default', ['clean:dist', 'test']);
-
-  // Version numbering task.
-  // grunt change-version-number --oldver=A.B.C --newver=X.Y.Z
-  // This can be overzealous, so its changes should always be manually reviewed!
-  grunt.registerTask('change-version-number', 'sed');
 
   grunt.registerTask('commonjs', ['babel:umd', 'npm-js']);
 
@@ -506,12 +520,13 @@ module.exports = function (grunt) {
   });
 
   // Docs task.
-  grunt.registerTask('docs-css', ['autoprefixer:docs', 'autoprefixer:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
+  grunt.registerTask('docs-css', ['postcss:docs', 'postcss:examples', 'csscomb:docs', 'csscomb:examples', 'cssmin:docs']);
   grunt.registerTask('docs-js', ['uglify:docsJs']);
   grunt.registerTask('lint-docs-js', ['jscs:assets']);
   grunt.registerTask('docs', ['docs-css', 'docs-js', 'lint-docs-js', 'clean:docs', 'copy:docs']);
+  grunt.registerTask('docs-github', ['jekyll:github']);
 
-  grunt.registerTask('prep-release', ['dist', 'docs', 'jekyll:github', 'htmlmin', 'compress']);
+  grunt.registerTask('prep-release', ['dist', 'docs', 'docs-github', 'compress']);
 
   // Publish to GitHub
   grunt.registerTask('publish', ['buildcontrol:pages']);

@@ -95,13 +95,8 @@
   font-size: $carousel-control-font-size;
   color: $carousel-control-color;
   text-align: center;
-<<<<<<< HEAD:less/carousel.less
-  text-shadow: @carousel-text-shadow;
-  background-color: rgba(0, 0, 0, 0); // Fix IE9 click-thru bug
-=======
   text-shadow: $carousel-text-shadow;
   opacity: $carousel-control-opacity;
->>>>>>> origin/v4-dev:scss/_carousel.scss
   // We can't have this transition here because WebKit cancels the carousel
   // animation if you trip this while in the middle of another animation.
 
@@ -183,9 +178,9 @@
     cursor: pointer;
     // IE9 hack for event handling
     //
-    // Internet Explorer 9 does not support clicks on elements without a set
-    // `background-color`. We cannot use `filter` since that's not viewed as a
-    // background color by the browser. Thus, a hack is needed.
+    // Internet Explorer 9 does not properly handle clicks on elements with a `background-color` of `transparent`,
+    // so we use `rgba(0,0,0,0)` instead since it's a non-buggy equivalent.
+    // See https://developer.mozilla.org/en-US/docs/Web/Events/click#Internet_Explorer
     background-color: rgba(0,0,0,0); // IE9
     border: 1px solid $carousel-indicator-border-color;
     border-radius: 10px;
@@ -230,16 +225,16 @@
   .carousel-control {
     .icon-prev,
     .icon-next {
-      width: (@carousel-control-font-size * 1.5);
-      height: (@carousel-control-font-size * 1.5);
-      margin-top: (@carousel-control-font-size / -2);
-      font-size: (@carousel-control-font-size * 1.5);
+      width: 30px;
+      height: 30px;
+      margin-top: -15px;
+      font-size: 30px;
     }
     .icon-prev {
-      margin-left: (@carousel-control-font-size / -2);
+      margin-left: -15px;
     }
     .icon-next {
-      margin-right: (@carousel-control-font-size / -2);
+      margin-right: -15px;
     }
   }
 
