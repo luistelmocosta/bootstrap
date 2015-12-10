@@ -1,6 +1,5 @@
 javascript:
-  enabled: false
-scss:
-  config_file: scss/.scss-lint.yml
+  config_file: js/.jshintrc
   enabled: true
-  ignore_file: scss/_normalize.scss
+scss:
+  enabled: false

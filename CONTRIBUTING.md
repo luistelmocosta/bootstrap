@@ -18,15 +18,16 @@ the preferred channel for [bug reports](#bug-reports), [features requests](#feat
 and [submitting pull requests](#pull-requests), but please respect the following
 restrictions:
 
-* Please **do not** use the issue tracker for personal support requests.  Stack
-  Overflow ([`bootstrap-4`](https://stackoverflow.com/questions/tagged/bootstrap-4) tag), [Slack](https://bootstrap-slack.herokuapp.com/) or [IRC](README.md#community) are better places to get help.
+* Please **do not** use the issue tracker for personal support requests. Stack
+  Overflow ([`twitter-bootstrap-3`](https://stackoverflow.com/questions/tagged/twitter-bootstrap-3) tag), [Slack](https://bootstrap-slack.herokuapp.com/) or [IRC](README.md#community) are better places to get help.
 
 * Please **do not** derail or troll issues. Keep the discussion on topic and
   respect the opinions of others.
 
 * Please **do not** open issues or pull requests regarding the code in
   [`Normalize`](https://github.com/necolas/normalize.css) (open them in
-  its repository).
+  their respective repositories).
+
 * Please **do not** open issues regarding the official themes offered on <http://themes.getbootstrap.com/>. Instead, please email any questions or feedback regarding those themes to `themes AT getbootstrap DOT com`.
 
 
@@ -36,7 +37,8 @@ Our bug tracker utilizes several labels to help organize and identify issues. He
 
 - `browser bug` - Issues that are reported to us, but actually are the result of a browser-specific bug. These are diagnosed with reduced test cases and result in an issue opened on that browser's own bug tracker.
 - `confirmed` - Issues that have been confirmed with a reduced test case and identify a bug in Bootstrap.
-- `css` - Issues stemming from our compiled CSS or source Sass files.
+- `css` - Issues stemming from our compiled CSS or source Less files.
+- `customizer` - Issues with our web-based Customizer.
 - `docs` - Issues for improving or updating our documentation.
 - `examples` - Issues involving the example templates included in our docs.
 - `feature` - Issues asking for a new feature to be added, or an existing one to be extended or modified. New features require a minor version bump (e.g., `v3.0.0` to `v3.1.0`).
@@ -67,7 +69,7 @@ Guidelines for bug reports:
 
 3. **Isolate the problem** &mdash; ideally create a [reduced test
    case](https://css-tricks.com/reduced-test-cases/) and a live example.
-   [This JS Bin](http://jsbin.com/qusafa/edit?html,output) is a helpful template.
+   [This JS Bin](http://jsbin.com/lefey/1/edit?html,output) is a helpful template.
 
 
 A good bug report shouldn't leave others needing to chase you up for more
@@ -114,7 +116,13 @@ When feasible, we aim to report such upstream bugs to the relevant browser vendo
 
 ## Feature requests
 
-Feature requests are welcome. But take a moment to find out whether your idea
+Feature requests are welcome, but please note that they **must target
+[Bootstrap v4](https://github.com/twbs/bootstrap/tree/v4-dev),** because
+Bootstrap v3 is now in maintenance mode and is closed off to new features.
+This is so that we can focus our efforts on Bootstrap v4, the future of the
+framework.
+
+Before opening a feature request, please take a moment to find out whether your idea
 fits with the scope and aims of the project. It's up to *you* to make a strong
 case to convince the project's developers of the merits of this feature. Please
 provide as much detail and context as possible.
@@ -131,13 +139,20 @@ implementing features, refactoring code, porting to a different language),
 otherwise you risk spending a lot of time working on something that the
 project's developers might not want to merge into the project.
 
+In particular, **pull requests that add new features to Bootstrap v3 will be
+rejected.** Bootstrap v3 is now in maintenance mode and is therefore closed
+off to new features, so that we can focus our efforts on Bootstrap v4, the
+future of the framework. Pull requests that add new features should target
+[Bootstrap v4 (the `v4-dev` git branch)](https://github.com/twbs/bootstrap/tree/v4-dev)
+instead, where they will be welcomed and duly considered.
+
 Please adhere to the [coding guidelines](#code-guidelines) used throughout the
 project (indentation, accurate comments, etc.) and any other requirements
 (such as test coverage).
 
-**Do not edit `bootstrap.css`, or `bootstrap.js`
+**Do not edit `bootstrap.css`, `bootstrap-theme.css`, or `bootstrap.js`
 directly!** Those files are automatically generated. You should edit the
-source files in [`/bootstrap/scss/`](https://github.com/twbs/bootstrap/tree/master/scss)
+source files in [`/bootstrap/less/`](https://github.com/twbs/bootstrap/tree/master/less)
 and/or [`/bootstrap/js/`](https://github.com/twbs/bootstrap/tree/master/js) instead.
 
 Similarly, when contributing to Bootstrap's documentation, you should edit the

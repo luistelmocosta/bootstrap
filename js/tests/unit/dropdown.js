@@ -24,18 +24,6 @@ $(function () {
     assert.strictEqual($.fn.dropdown, undefined, 'dropdown was set back to undefined (org value)')
   })
 
-  QUnit.test('should throw explicit error on undefined method', function (assert) {
-    assert.expect(1)
-    var $el = $('<div/>')
-    $el.bootstrapDropdown()
-    try {
-      $el.bootstrapDropdown('noMethod')
-    }
-    catch (err) {
-      assert.strictEqual(err.message, 'No method named "noMethod"')
-    }
-  })
-
   QUnit.test('should return jquery collection containing the element', function (assert) {
     assert.expect(2)
     var $el = $('<div/>')

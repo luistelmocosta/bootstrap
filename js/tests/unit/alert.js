@@ -38,8 +38,7 @@ $(function () {
         + '<a class="close" href="#" data-dismiss="alert">×</a>'
         + '<p><strong>Holy guacamole!</strong> Best check yo self, you\'re not looking too good.</p>'
         + '</div>'
-
-    var $alert = $(alertHTML).bootstrapAlert().appendTo($('#qunit-fixture'))
+    var $alert = $(alertHTML).bootstrapAlert()
 
     $alert.find('.close').trigger('click')
 

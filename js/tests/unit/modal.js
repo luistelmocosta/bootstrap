@@ -24,18 +24,6 @@ $(function () {
     assert.strictEqual($.fn.modal, undefined, 'modal was set back to undefined (orig value)')
   })
 
-  QUnit.test('should throw explicit error on undefined method', function (assert) {
-    assert.expect(1)
-    var $el = $('<div id="modal-test"/>')
-    $el.bootstrapModal()
-    try {
-      $el.bootstrapModal('noMethod')
-    }
-    catch (err) {
-      assert.strictEqual(err.message, 'No method named "noMethod"')
-    }
-  })
-
   QUnit.test('should return jquery collection containing the element', function (assert) {
     assert.expect(2)
     var $el = $('<div id="modal-test"/>')
@@ -46,7 +34,7 @@ $(function () {
 
   QUnit.test('should expose defaults var for settings', function (assert) {
     assert.expect(1)
-    assert.ok($.fn.bootstrapModal.Constructor.Default, 'default object exposed')
+    assert.ok($.fn.bootstrapModal.Constructor.DEFAULTS, 'default object exposed')
   })
 
   QUnit.test('should insert into dom when show method is called', function (assert) {
