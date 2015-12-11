@@ -20,6 +20,6 @@ Na secção da componente *input-group* foi identificado que em todos os *forms*
 <img src="res/ie2.png" width="1000 px" alt="ie2"/>
 <img src="res/ie3.png" width="1000 px" alt="ie3"/>
 
-> Como se pode observar nas imagens anteriores, os *inputs* não têm a mesma altura dos botões ao seu lado.
+> **Nota:** Como se pode observar nas imagens anteriores, os *inputs* não têm a mesma altura dos botões ao seu lado.
 
 
