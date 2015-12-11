@@ -14,3 +14,9 @@ Uma vez que a versão 4 do *bootstrap* se encontra em *alpha* optámos por utili
 
 Como já referido na introdução, optámos por tentar evoluir a nova versão do *bootstrap* que já se encontra em construção e em testes para ser lançada em breve.<br>
 Identificar a feature a evoluir foi um processo relativamente simples, pois o site do *bootstrap* já nos oferece uma *live demo* das suas *features* e ao visitarmos o site com o *Internet Explorer 11* encontrámos logo uma série de possiveis melhoramentos a ser feitos no projeto.
+Na secção da componente *input-group* foi identificado que em todos os *forms* que tinham *inputs* estes não tinham o mesmo tamanho que as outras componentes que eram colocadas ao seu lado.<br>
+
+<img src="res/ie1.png" width="500 px" alt="Bootstrap"/>
+
+
+
