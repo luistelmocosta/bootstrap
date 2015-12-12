@@ -60,7 +60,7 @@ Este *fix* proposto por nós foi testado nos seguintes *browsers* com um zoom de
 <br>
 <br>
 ### <a name="pr"></a>Pull Request <br>
-Após o melhoramento da nova funcionalidade submetemos um *pull-request* na branch da versão 4 do *bootstrap*([*v4-dev*](https://github.com/twbs/bootstrap/tree/v4-dev)).<br>
+Após o melhoramento da funcionalidade submetemos um *pull-request* na branch da versão 4 do *bootstrap*([*v4-dev*](https://github.com/twbs/bootstrap/tree/v4-dev)).<br>
 
 <img src="res/github.png" width="1000 px" alt="ipg"/>
 <img src="res/tests.png" width="1000 px" alt="ipg"/>
