@@ -43,7 +43,13 @@ Depois de descarregar e compilar o código da versão 4 da *branch* [*v4-dev*](h
 
 <br>
 A solução que conseguimos encontrar para resolver este problema foi em vez de utilizar a propriedade *line-height* passar a usar a propriedade *heigth* no *css* pois esta comporta-se de igual forma em todos os *browsers* suportados pelo *bootstrap*.<br>
-Ao analisarmos melhor o código *sass* encontrámos uma [*mixin*](http://www.sitepoint.com/sass-basics-the-mixin-directive/) já implementada que executava exactamente o que nós pretendiamos. Após incluirmos a [*mixin*](http://www.sitepoint.com/sass-basics-the-mixin-directive/) nos sítios onde era necessário e gerado o novo código os *inputs* continuavam com uma diferença minima de altura, fomos então ao código da versão 3 do *bootstrap* para perceber como era calculada a altura dos *inputs* e chegámos à conclusão que faltava incluir nos cálculos a largura do bordo dos inputs (*$input-border-width*).
+Ao analisarmos melhor o código *sass* encontrámos uma [*mixin*](http://www.sitepoint.com/sass-basics-the-mixin-directive/) já implementada que executava exactamente o que nós pretendiamos. Após incluirmos a [*mixin*](http://www.sitepoint.com/sass-basics-the-mixin-directive/) nos sítios onde era necessário e gerado o novo código os *inputs* continuavam com uma diferença minima de altura, fomos então ao código da versão 3 do *bootstrap* para perceber como era calculada a altura dos *inputs* e chegámos à conclusão que faltava incluir nos cálculos a largura do bordo dos inputs (*$input-border-width*).<br>
+Este *fix* apresentado por nós foi testado nos seguintes *browsers* com um zoom de 100%, não apresentado qualquer problema:<br>
+
+- **Google Chrome**(iOS, OS x, Windows);<br>
+- **Safari**(iOS);<br>
+- **Internet** **Explorer** **11**(Windows).<br>
+
 <br>
 <br>
 <img src="res/iefix1.png" width="1000 px" alt="ipg"/>
@@ -54,6 +60,7 @@ Ao analisarmos melhor o código *sass* encontrámos uma [*mixin*](http://www.sit
 
 <br>
 <br>
+### <a name="pr"></a>Pull Request
 <br><br>
 ### <a name="info"></a>Informações
 
