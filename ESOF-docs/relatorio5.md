@@ -27,7 +27,7 @@ Na secção da componente *input-group* foi identificado que em todos os *forms*
 <br>
 ### <a name="identcomp"></a>Identificação dos Componentes que Implementam a Funcionalidade
 <br>
-A componente que implementa a funcionalidade acima apresentada é a do *Input-group*. Mais uma vez a estruturação do *site* do *bootstrap* ajudou bastante pois na *live demo* apresentada são logo indicadas as componentes que implementas as funcionalidades.
+A componente que implementa a funcionalidade acima apresentada é a do *Input-group*. Mais uma vez a estruturação do *site* do *bootstrap* ajudou bastante pois na *live demo* apresentada são logo indicadas as componentes que implementam as funcionalidades.
 <br>
 <img src="res/inputgroup.png" width="1000 px" alt="ipg"/>
 
