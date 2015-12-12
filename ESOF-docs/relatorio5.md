@@ -21,9 +21,27 @@ Na secção da componente *input-group* foi identificado que em todos os *forms*
 <img src="res/ie3.png" width="1000 px" alt="ie3"/>
 
 > **Nota:** Como se pode observar nas imagens anteriores, os *inputs* não têm a mesma altura dos botões ao seu lado.
-
+<br>
+<br>
 ### <a name="identcomp"></a>Identificação dos Componentes que Implementam a Funcionalidade
 
+A componente que implementa a funcionalidade acima apresentada é a do *Input-group*. Mais uma vez a estruturação do *site* do *bootstrap* ajudou bastante pois na *live demo* apresentada são logo indicadas as componentes que implementas as funcionalidades.
+<br>
+<img src="res/inputgroup.png" width="1000 px" alt="ipg"/>
 
+<br><br>
 
+### <a name="evft"></a>Evolução da feature
 
+<br><br>
+### <a name="info"></a>Informações
+
+##### Autores:
+
+* Luís Telmo Costa - 200806068
+* José Carlos da Rocha Lima - ei10012
+* Alexandre Marques de Castro Ribeiro - ee12288
+
+Faculdade de Engenharia da Universidade do Porto - MIEIC
+
+2015-12-12
