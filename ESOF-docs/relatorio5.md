@@ -1,4 +1,4 @@
-# Relatório 4 - ESOF
+# Relatório 5 - ESOF
 ##Bootstrap - Evolução de Software
 
 <img src="res/logo.png" width="500 px" alt="Bootstrap"/>
@@ -35,7 +35,13 @@ A componente que implementa a funcionalidade acima apresentada é a do *Input-gr
 
 ### <a name="evft"></a>Evolução da funcionalidade
 <br>
+Com a nova versão do *bootstrap* a equipa principal de desenvolvimento decidiou passar a gerar o seu *css* com [*sass*](http://sass-lang.com/) em vez de [*less*](http://lesscss.org/), os principais motivos descritos no site para esta mudança são a maior velocidade de compilação do código e a grande comunidade de *developers* que existe no *sass*.
+Depois de descarregar e compilar o código da versão 4 da *branch* [*v4-dev*](https://github.com/twbs/bootstrap/tree/v4-dev) fizemos vários testes na componente que implementa a funcionalidade que pretendiamos melhorar. Apercebemo-nos então que a propriedade de *css* que afectava o tamanho dos *inputs* era o *line-height*. Após alguma pesquisa e testes chegámos à conclusão que esta propriedade não funciona correctamente no *Internet Explorer 11", que é um browser que o *bootstrap* suporta.
+<br>
+<img src="res/lineheight.png" width="1000 px" alt="ipg"/>
+>**Fonte:**[http://joshnh.com/weblog/line-height-doesnt-work-as-expected-on-inputs/*](http://joshnh.com/weblog/line-height-doesnt-work-as-expected-on-inputs/)
 
+<br>
 <br><br>
 ### <a name="info"></a>Informações
 
