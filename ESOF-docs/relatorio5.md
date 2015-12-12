@@ -67,6 +67,9 @@ Após o melhoramento da nova funcionalidade submetemos um *pull-request* na bran
 
 >***Pull-request* link:** [https://github.com/twbs/bootstrap/pull/18542](https://github.com/twbs/bootstrap/pull/18542)
 
+<br>
+### <a name="evft"></a>Análise Crítica
+
 <br><br>
 ### <a name="info"></a>Informações
 
