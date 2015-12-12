@@ -10,7 +10,7 @@ Na fase final do projecto desenvolvido na unidade curricualr Engenharia de Softw
 Uma vez que a versão 4 do *bootstrap* se encontra em *alpha* optámos por utilizar a *branch* desta versão para tentar identificar e evoluir uma *feature*. 
 
 
-### <a name="feature"></a>Feature
+### <a name="feature"></a>Identificação da Funcionalidade
 
 Como já referido na introdução, optámos por tentar evoluir a nova versão do *bootstrap* que já se encontra em construção e em testes para ser lançada em breve.<br>
 Identificar a feature a evoluir foi um processo relativamente simples, pois o site do *bootstrap* já nos oferece uma *live demo* das suas *features* e ao visitarmos o site com o *Internet Explorer 11* encontrámos logo uma série de possiveis melhoramentos a ser feitos no projeto.<br>
@@ -21,5 +21,9 @@ Na secção da componente *input-group* foi identificado que em todos os *forms*
 <img src="res/ie3.png" width="1000 px" alt="ie3"/>
 
 > **Nota:** Como se pode observar nas imagens anteriores, os *inputs* não têm a mesma altura dos botões ao seu lado.
+
+### <a name="identcomp"></a>Identificação dos Componentes que Implementam a Funcionalidade
+
+
 
 
