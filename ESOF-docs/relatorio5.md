@@ -51,7 +51,6 @@ Este *fix* apresentado por nós foi testado nos seguintes *browsers* com um zoom
 - **Internet** **Explorer** **11**(Windows).<br>
 
 <br>
-<br>
 <img src="res/iefix1.png" width="1000 px" alt="ipg"/>
 <img src="res/iefix2.png" width="1000 px" alt="ipg"/>
 <img src="res/iefix3.png" width="1000 px" alt="ipg"/>
