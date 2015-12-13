@@ -69,8 +69,13 @@ Após o melhoramento da funcionalidade submetemos um *pull-request* na branch da
 
 <br>
 ### <a name="evft"></a>Análise Crítica
+Dado que o bootstrap é um projeto estruturalmente bem constituído e, uma vez que, atualmente se encontra disponível uma versão *alpha* da próxima *release* foi relativamente fácil identificar uma *feature* corrigível. No que diz respeito à sua implementação, o facto do css permitir obter um mesmo resultado utilizando diferentes *css rules*, foi fulcral para conseguir obter uma solução homogénea nos diferentes browsers suportados pelo Bootstrap.
 
-<br><br>
+<br>
+### <a name="apontaF"></a>Apontamento Final
+Para finalizar, o grupo considera que foi interessante a abordagem feita aos conteúdos programáticos desta Unidade Curricular, através da exploração de um projeto *open source* alojado no GitHub, porque permitiu ficarmos a perceber as diferentes fases do ciclo de vida do software, assim como, como os diferentes intervenientes colaboram na produção desse mesmo software.
+
+<br>
 ### <a name="info"></a>Informações
 
 ##### Autores:
