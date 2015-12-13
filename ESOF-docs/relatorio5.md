@@ -6,14 +6,14 @@
 
 ### <a name="introducao"></a>Introdução
 <br>
-Na fase final do projecto desenvolvido na unidade curricualr Engenharia de Software, foi nos pedido para evoluir uma funcionalidade do *bootstrap* sem que as restantes funcionalidades fossem quebradas.<br>
+Na fase final do projecto desenvolvido na unidade curricular Engenharia de Software, foi-nos pedido para evoluir uma funcionalidade do *bootstrap* sem que as restantes funcionalidades fossem quebradas.<br>
 Uma vez que a versão 4 do *bootstrap* se encontra em *alpha* optámos por utilizar a *branch* desta versão para tentar identificar e evoluir uma funcionalidade. 
 
 
 ### <a name="feature"></a>Identificação da Funcionalidade
 <br>
 Como já referido na introdução, optámos por tentar evoluir a nova versão do *bootstrap* que já se encontra em construção e em testes para ser lançada em breve.<br>
-Identificar a feature a evoluir foi um processo relativamente simples, pois o site do *bootstrap* já nos oferece uma *live demo* das suas *features* e ao visitarmos o site com o *Internet Explorer 11* encontrámos logo uma série de possiveis melhoramentos a ser feitos no projeto.<br>
+Identificar a *feature* a evoluir foi um processo relativamente simples, pois o site do *bootstrap* já nos oferece uma *live demo* das suas *features* e ao visitarmos o site com o *Internet Explorer 11* encontrámos logo uma série de possiveis melhoramentos a ser feitos no projeto.<br>
 Na secção da componente *input-group* foi identificado que em todos os *forms* que tinham *inputs* estes não tinham o mesmo tamanho que as outras componentes que eram colocadas ao seu lado.<br>
 
 <img src="res/ie1.png" width="1000 px" alt="ie1"/>
@@ -36,7 +36,7 @@ A componente que implementa a funcionalidade acima apresentada é a do *Input-gr
 ### <a name="evft"></a>Evolução da funcionalidade
 <br>
 Com a nova versão do *bootstrap* a equipa principal de desenvolvimento decidiou passar a gerar o seu *css* com [*sass*](http://sass-lang.com/) em vez de [*less*](http://lesscss.org/), os principais motivos descritos no site para esta mudança são a maior velocidade de compilação do código e a grande comunidade de *developers* que existe no *sass*.<br>
-Depois de descarregar e compilar o código da versão 4 da *branch* [*v4-dev*](https://github.com/twbs/bootstrap/tree/v4-dev) fizemos vários testes na componente que implementa a funcionalidade que pretendiamos melhorar. Apercebemo-nos então que a propriedade de *css* que afectava o tamanho dos *inputs* era o *line-height*. Após alguma pesquisa e testes chegámos à conclusão que esta propriedade não funciona correctamente no *Internet Explorer 11"*, que é um browser que o *bootstrap* suporta.
+Depois de descarregar e compilar o código da versão 4 da *branch* [*v4-dev*](https://github.com/twbs/bootstrap/tree/v4-dev) fizemos vários testes na componente que implementa a funcionalidade que pretendiamos melhorar. Apercebemo-nos então que a propriedade de *css* que afectava o tamanho dos *inputs* era o *line-height*. Após alguma pesquisa e testes chegámos à conclusão que esta propriedade não funciona correctamente no *Internet Explorer 11*, que é um browser que o *bootstrap* suporta.
 <br>
 <img src="res/lineheight.png" width="1000 px" alt="ipg"/>
 >**Fonte:** [http://joshnh.com/weblog/line-height-doesnt-work-as-expected-on-inputs/](http://joshnh.com/weblog/line-height-doesnt-work-as-expected-on-inputs/)
@@ -46,7 +46,7 @@ A solução que conseguimos encontrar para resolver este problema foi em vez de 
 Ao analisarmos melhor o código *sass* encontrámos uma [*mixin*](http://www.sitepoint.com/sass-basics-the-mixin-directive/) já implementada que executava exactamente o que nós pretendiamos. Após incluirmos a [*mixin*](http://www.sitepoint.com/sass-basics-the-mixin-directive/) nos sítios onde era necessário e gerado o novo código os *inputs* continuavam com uma diferença minima de altura, fomos então ao código da versão 3 do *bootstrap* para perceber como era calculada a altura dos *inputs* e chegámos à conclusão que faltava incluir nos cálculos a largura do bordo dos inputs (*$input-border-width*).<br>
 Este *fix* proposto por nós foi testado nos seguintes *browsers* com um zoom de 100%, não apresentando qualquer problema:<br>
 
-- **Google Chrome**(iOS, OS x, Windows);<br>
+- **Google Chrome**(iOS, OS X, Windows, Ubuntu);<br>
 - **Safari**(iOS);<br>
 - **Internet** **Explorer** **11**(Windows).<br>
 
@@ -75,7 +75,7 @@ Após o melhoramento da funcionalidade submetemos um *pull-request* na branch da
 
 ##### Autores:
 
-* Luís Telmo Costa - 200806068
+* Luís Telmo Costa - up200806068
 * José Carlos da Rocha Lima - ei10012
 * Alexandre Marques de Castro Ribeiro - ee12288
 
