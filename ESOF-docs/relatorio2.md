@@ -121,9 +121,9 @@ Dada a vasta comunidade do Bootstrap, a velocidade e eficácia com que recebem *
 
 As milestones são muito importantes na gestão de um projecto, já que permite o teste de novas funcionalidades. No caso do bootstrap há apenas duas *milestones* por cumprir - a versão 3.3.6 (73% completa) e a versão 4.0.0alpha.2 (81% completa). Reparamos também que há 27 milestones fechadas, ou seja, que foram completas com sucesso. Estas *milestones* têm um papel muito importante na maneira como o projecto é gerido, na maneira como é feita a evolução e como esta é comunicada à comunidade. Permite também que os utilizadores possam fazer parte deste objectivo e assim acelerar o processo. *Milestones* podem funcionar como incentivo, como regras e em todos os projectos, regras e prazos são o cerne e fazem com que o rigor e a consistência não sejam ignoradas. <br>
 
-####Use Case <br>
+###Use Case <br>
 <img src="res/bsusecase.png" width="1000 px" alt="ie1"/>
->**Nota:** Neste caso o utilizador pode criar um botão com ou sem *dropdown* e alterar o seu tamanho, é possível também criar um *input* com botões e *check boxes*, sendo possível também alterar o seu tamanho.
+>**Nota:** Neste caso o utilizador pode criar um botão com ou sem *dropdown* e alterar o seu tamanho, pode também criar um *input* com botões e *check boxes*, sendo possível também alterar o seu tamanho.
 
 ### Referências
 <a name="ref1" href="https://blog.twitter.com/2012/say-hello-to-bootstrap-20">1) Twitter Blog</a><br>
