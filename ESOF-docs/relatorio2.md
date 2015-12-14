@@ -50,16 +50,19 @@ Destacadas algumas necessidades, passamos a uma formalização mais estruturada 
 ######Requisitos funcionais
 
 
-* O software deve permitir criar web sites responsivos (a partir da versão 2.0), isto é, providenciar uma boa experiencia de navegação num largo espectro de dispositivos;
+* O software deve permitir criar web sites responsivos (a partir da versão 3), isto é, providenciar uma boa experiencia de navegação num largo espectro de dispositivos;
+
 * O software deve providenciar um aspecto moderno dos elementos de uma página web;
+
 * O software deve poder ser integrado em código já produzido assim como deve permitir compatibilidade com os elementos web mais recentes;
-* O software deve permitir que o utilizador possa gerir os seus vários componentes, através de um gerenciador de packages, ou mesmo através do override de comportamentos do CSS e/ou JavaScript;
+
+* O software deve permitir que o utilizador possa gerir os seus vários componentes, através de um gerenciador de packages, ou mesmo através do override de comportamentos do CSS e/ou JavaScript.
 
 
 ######Requisitos não funcionais
 
 
-* O software deve poder ser utilizado na maior parte dos browsers, tanto desktop como moveis, embora, para uma melhor experiencia, seja recomendado o uso de versões recentes;
+* O software deve poder ser utilizado na maior parte dos browsers, tanto desktop como móveis, embora, para uma melhor experiência, seja recomendado o uso de versões recentes;
 
 * O software deve estar bem e integralmente documentado para que mesmo utilizadores com menos experiência o possam utilizar com facilidade;
 
@@ -67,7 +70,7 @@ Destacadas algumas necessidades, passamos a uma formalização mais estruturada 
 
 * O software deve tirar proveito do apoio da comunidade para continuar a melhorar;
 
-* O software deve seguir certas regras no que diz respeito à numeração de versões, para manter um ciclo de desenvolvimento coerente e para evitar problemas de retrocompatibilidade;
+* O software deve seguir certas regras no que diz respeito à numeração de versões, para manter um ciclo de desenvolvimento coerente e para evitar problemas de retrocompatibilidade.
 
 
 ###Contexto Actual
@@ -79,14 +82,14 @@ Nos dias de hoje e muito por causa do modelo *open source* a gestão de requisit
 ####Elicitação dos requisitos
 
 
-Para que haja uma atenção cuidada a todos os requisitos e sugestões que são feitas em relação ao projecto, as equipas de software *open source* abrigam-se em duas funcionalidades existentes no *GitHub*: **issues** e **pull requests**. Estas duas funcionalidades estão disponíveis para o público em geral e para a própria equipa de desenvolvimento. É importante distinguir em que consistem cada um desdes conceitos. **Issues** alertam para a existência de anomalias e servem também, para solicitar a implementação de novas funcionalidades. Os **pull requests** derivam das **issues** de modo a que a cada **isse** se possa responder com o **pull request** adequado e assim modificar o código fonte, algo da competência do *core group*, responsável por corrigir bugs e analisar cada solicitação que permita melhorar o projecto.
+Para que haja uma atenção cuidada a todos os requisitos e sugestões que são feitas em relação ao projecto, as equipas de software *open source* abrigam-se em duas funcionalidades existentes no *GitHub*: **issues** e **pull requests**. Estas duas funcionalidades estão disponíveis para o público em geral e para a própria equipa de desenvolvimento. É importante distinguir em que consistem cada um desdes conceitos. **Issues** alertam para a existência de anomalias e servem também, para solicitar a implementação de novas funcionalidades. Os **pull requests** derivam das **issues** de modo a que a cada **issue** se possa responder com o **pull request** adequado e assim modificar o código fonte, algo da competência do *core group*, responsável por corrigir bugs e analisar cada solicitação que permita melhorar o projecto.
 
 
 
 ####Negociação e análise
 
 
-O Bootstrap encontra-se dividido em vários [*packages*](https://atmospherejs.com/packages/Bootstrap). Existem mais de 400 **packages** disponíveis para Bootstrap. Esta é uma estratégia que permite a categorização e separação dos requisitos. A expansibilidade do Bootstrap, com a utilização de *packages* faz com que seja possível uma aprimorização e filtragem da quantidade e qualidade dos *requests* feitos e da sua importância para o projecto. A cada *package* está associado um repositório independente capaz de lidar com os *pull requests* e *issues* que poderão existir por parte da comunidade. As solicitações podem ser exageradamente elevados e não há garantia que cada uma delas é vital ao funcionamento e qualidade do software. É preciso existir critério e precisão no que toca à análise e projecção de cada pedido e é humanamente impossível que apenas um grupo seja capaz de cuidar e resolver todas as exigências a que estão expostos. 
+O Bootstrap encontra-se dividido em vários [*packages*](https://atmospherejs.com/packages/Bootstrap). Existem mais de 400 **packages** disponíveis para Bootstrap. Esta é uma estratégia que permite a categorização e separação dos requisitos. A expansibilidade do Bootstrap, com a utilização de *packages* faz com que seja possível uma aprimorização e filtragem da quantidade e qualidade dos *requests* feitos e da sua importância para o projecto. A cada *package* está associado um repositório independente capaz de lidar com os *pull requests* e *issues* que poderão existir por parte da comunidade. As solicitações podem ser exageradamente elevadas e não há garantia que cada uma delas é vital ao funcionamento e qualidade do software. É preciso existir critério e precisão no que toca à análise e projecção de cada pedido e é humanamente impossível que apenas um grupo seja capaz de cuidar e resolver todas as exigências a que estão expostos. 
 Dada a compartimentalização dos requisitos convém apurar aqueles que são essenciais e vitais à integridade do projecto, como por exemplo, requisitos que estejam ligados à API. Esta é a mais delicada parte com que o core group tem que lidar e é muito importante que nunca seja posta em causa a integridade do projecto bem como a sua performance. É necessário assegurar que nenhuma modificação feita irá prejdicar o comportamento correcto da API e as *packages* que estão dependentes disso. 
 
 Para que tudo corra dentro dos termos correctos é necessário que haja uma **priorização** dos requisitos e que estes sejam hierarquizados por ordem de relevância e funcionalidade. Tem que haver também permanente contacto entre a *core team* para que as alterações não tenham um efeito avassalador. Tópicos referentes à API têm que ser cuidados de uma maneira exímia, pois a falha no não tratamento ou tratamento errado dessas *isses* pode levar a problemas maiores como a perda de informação, bugs extremos ou até mesmo à interrupção temportária do serviço. 
