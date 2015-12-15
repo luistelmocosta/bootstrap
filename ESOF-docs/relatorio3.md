@@ -16,7 +16,7 @@ O objetivo deste relatório é a explicitação de alguns aspetos relativos à a
 O Modelo 4+1
 -------------
 
-O modelo de vistas 4+1 de Arquitetura de Software permite juntar várias pontos de vista sobre o mesmo software para dar uma perspectiva o mais completa possível sobre o mesmo. Este modelo baseia-se então nos pontos de vista apresentados a seguir.
+O modelo de vistas 4+1 de Arquitetura de Software permite juntar vários pontos de vista sobre o mesmo software para dar uma perspectiva o mais completa possível sobre o mesmo. Este modelo baseia-se então nos pontos de vista apresentados a seguir.
 
 ![](https://upload.wikimedia.org/wikipedia/commons/f/f2/4%2B1_Architectural_View_Model.jpg)
 
@@ -24,7 +24,7 @@ O modelo de vistas 4+1 de Arquitetura de Software permite juntar várias pontos 
 
 > O Modelo 4+1 foi desenvolvido por [Philippe Kruchten](https://en.wikipedia.org/wiki/Philippe_Kruchten), um engenheiro de Software, nascido em 1952, no Canadá. Segundo Phillipe, este modelo foi criado com a intenção de descrever a arquitectura de **software intensive systems**, baseado no uso de muitas vistas e todas elas concorrentes. 
 
-Este uso de múltiplos pontos de vista permite abordar separadamente as preocupações dos vários *stakeholders* da arquitetura: o usuário final, desenvolvedores, engenheiros de sistemas, gerentes de projeto, etc., e para lidar separadamente os requisitos funcionais e não funcionais. Cada um dos cinco pontos de vista é descrito, em conjunto com uma notação de apreender todas as noções que as envolvem. 
+Este uso de múltiplos pontos de vista permite abordar separadamente as preocupações dos vários *stakeholders* da arquitetura: o utilizador final, desenvolvedores, engenheiros de sistemas, gerentes de projeto, etc., e para lidar separadamente os requisitos funcionais e não funcionais. Cada um dos cinco pontos de vista é descrito, em conjunto com uma notação de apreender todas as noções que as envolvem. 
 
 
 
@@ -32,7 +32,7 @@ Este uso de múltiplos pontos de vista permite abordar separadamente as preocupa
 #### Logical View
 *The Object-Oriented Decomposition*
 
-A vista lógica, de maneira sucinta, é responsável por suportar os requisitos funcionais - o que o sistema deve providenciar em termos de serviços aos seus utilizadores. O sistema é decomposto com conjunto de abstrações essenciais, retiradas maioritariamente do domínio do nosso problema, na forma de *objects* ou *object classes*, que permitem explorar os principios da abstração, encapsulação e herança. Esta decomposição não é apenas essencial para uma análise funcional do sistema, mas permite também identificar os mecanismos mais comuns e retratar elementos valiosos que existem nas várias plataformas do projecto. Para representar a arquitectura lógica, usam-se *class diagrams* e *class templates*, também conhecida por *Rational/Booch approach*.
+A vista lógica, de maneira sucinta, é responsável por suportar os requisitos funcionais - o que o sistema deve providenciar em termos de serviços aos seus utilizadores. O sistema é decomposto num conjunto de abstrações essenciais, retiradas maioritariamente do domínio do nosso problema, na forma de *objects* ou *object classes*, que permitem explorar os princípios da abstração, encapsulação e herança. Esta decomposição não é apenas essencial para uma análise funcional do sistema, mas permite também identificar os mecanismos mais comuns e retratar elementos valiosos que existem nas várias plataformas do projecto. Para representar a arquitectura lógica, usam-se *class diagrams* e *class templates*, também conhecida por *Rational/Booch approach*.
 Um diagrama de classes mostra um conjunto de classes e as suas relações lógicas: associação, uso, composição, herança, etc. Um conjunto de classes associadas podem ser agrupadas em categorias de classes. Os *class templates* focam-se em cada *class* individualmente, enfatizando as operações principais da classe e identificando as características principais de cada objecto. 
 
 ![](https://raw.githubusercontent.com/luistelmocosta/bootstrap/master/ESOF-docs/res/logicalview.png)
@@ -49,12 +49,12 @@ De acordo com a interpretação dos autores deste relatório, no *bootstrap* a *
 *Subsystem Decomposition*
 
 A arquitectura ou vista de desenvolvimento centra-se na organização modular do software no seu ambiente de desenvolvimento. O software é *packaged* em pequenos pedaços - *program libraries* ou *subsystems* -  que podem ser desenvolvidos por um ou um pequeno grupo de *developers*. Os *subsystems* são organizados numa hierarquia em camadas, sendo que, cada camada, providencia uma estreita e bem definida *interface* para as camadas acima dela. 
-A arquitectura de desenvolvimento de um sistema é representada por módulos e *subsystem diagrams*, mostrando relacionamentos de *export* e *import*. A arquitectura de desenvolvimento apenas pode ser completamente descrita quando dos os elementos do software forem identificados. É, no entanto, possível, listar todas as regras que regem a arquitectura de desenvolvimento: o particionamento, agrupamento, visibilidade. 
-Para uma análise mais genérica, podemos dizer que a arquitecura de desenvolvimento leva em conta requisitos internos, relacionados com a facilidade de desenvolvimento, gerenciamento de software, reuso, bem como restrições impostas pelo *toolset* ou a linguagem de programação. A vista de desenvolvimento serve de base para o conhecimento da exigência, para o planeamento de trabalho da equipa (ou ate mesmo da organização responsável), para a avaliação dos custos e planeamento, para monitorizar o progresso do projecto, portabilidade e segurança. É a base para o estabelecimento de uma linha de produto.<br>
+A arquitectura de desenvolvimento de um sistema é representada por módulos e *subsystem diagrams*, mostrando relacionamentos de *export* e *import*. A arquitectura de desenvolvimento apenas pode ser completamente descrita quando todos os elementos do software forem identificados. É, no entanto, possível listar todas as regras que regem a arquitectura de desenvolvimento: o particionamento, agrupamento, visibilidade. 
+Para uma análise mais genérica, podemos dizer que a arquitectura de desenvolvimento leva em conta requisitos internos, relacionados com a facilidade de desenvolvimento, gerenciamento de software, reutilização, bem como restrições impostas pelo *toolset* ou a linguagem de programação. A vista de desenvolvimento serve de base para o conhecimento da exigência, para o planeamento de trabalho da equipa (ou ate mesmo da organização responsável), para a avaliação dos custos e planeamento, para monitorizar o progresso do projecto, portabilidade e segurança. É a base para o estabelecimento de uma linha de produto.<br>
 
 ![](https://raw.githubusercontent.com/luistelmocosta/bootstrap/master/ESOF-docs/res/developmentview.png)<br><br>
 
-Segundo a interpretação dos autores deste relatório, este diagrama de *development view* representa as componentes do bootstrap. Sendo este diagrama muito util, pois permite ao cliente uma noção das componentes já existentes, facilitando assim uma reutilização de código já implementado pelas componentes.<br><br>
+Segundo a interpretação dos autores deste relatório, este diagrama de *development view* representa as componentes do Bootstrap. Sendo este diagrama muito útil, pois permite ao cliente uma noção das componentes já existentes, facilitando assim uma reutilização de código já implementado pelas componentes.<br><br>
 
 #### The Process View
 
@@ -95,7 +95,7 @@ Identificamos já as várias características importantes das classes da vista l
 
 
 > - Autonomia: os objectos são activos, passivos ou protegidos?
->  - Objectos activos tomam a iniciativa de invocar operaçoes de outros objectos ou suas próprias operações e tem controlo total sobre a invocação das suas póprias operações por outros objectos.
+>  - Objectos activos tomam a iniciativa de invocar operações de outros objectos ou as suas próprias operações e tem controlo total sobre a invocação das suas póprias operações por outros objectos.
 >  - Um objecto passivo não invoca espontaneamente quaisquer operações e não tem qualquer controlo sobre a invocação das suas operaçoes quando invocado por outros objectos.
 >  - Um objecto protegido não invoca espontaneamente quaisquer operações, mas tem alguma arbitrariedade na invocação das suas operações.
 > - Persistência: são os objetos transientes ou permanentes? Provocam alguma falha de um processo ou do processador?
@@ -115,9 +115,9 @@ Começando pela arquitectura fisica: identificar estimulos externos (pedidos) pa
 O resultado é um mapeamento das classes (e seus objetos) para um conjunto de tarefas e processos da arquitectura de processos. Tipicamente, existe sempre um *agent task* para uma classe activa, com algumas variações: alguns *agents* para uma determinada classe para aumentar o rendimento, ou várias classes mapeadas num único *agent* porque as suas operações raramente são invocadas ou para garantir uma execução sequencial.
 De salientar que este não é um processo linear e determinista que leva a uma arquitectura de processos óptima; requer algumas iterações para que possa receber um *compromisso* fiável. 
 
-##### **Da vista lógica para a vista de desenvolvimento**
+##### **A partir da vista lógica para a vista de desenvolvimento**
 
-Uma classe normalmente é implementada como um módulo. Classes extensas são decompostas em multiplos *packages*. Conjuntos de classes que estão intimamente ligadas-*class categories*- são agrupadas em *subsystems*. Outros factores têm de ter tido em conta para a definição de *subsystems* como a organização da equipa, a magnitude do codigo (tipicamente de 5K a 20K SLOC por *subsystem*, o grau de reutilização e semelhança esperado e rigorosos príncipios de estratificação (questões de visibilidade), a política de lançamento e o gerenciamento de configuração. Portanto, geralmente acaba-se sempre com uma vista que não possui uma correspondência 1-1 com a vista lógica estabelecida. 
+Uma classe normalmente é implementada como um módulo. Classes extensas são decompostas em múltiplos *packages*. Conjuntos de classes que estão intimamente ligadas -*class categories*- são agrupadas em *subsystems*. Outros factores têm de ter sido tidos em conta para a definição de *subsystems* como a organização da equipa, a magnitude do codigo (tipicamente de 5K a 20K SLOC por *subsystem*, o grau de reutilização e semelhança esperado e rigorosos príncipios de estratificação (questões de visibilidade), a política de lançamento e o gerenciamento de configuração. Portanto, geralmente acaba-se sempre com uma vista que não possui uma correspondência 1-1 com a vista lógica estabelecida. 
 As vistas lógicas e de desenvolvimento são muito proximas, mas têm diferentes preocupações. Está comprovado que quanto maior for o projecto, maior é a distância entre as vistas. 
 
 ##### **A partir da vista de processo para a vista física**
@@ -127,11 +127,11 @@ Processos e grupos de processos são mapeados para o hardware fisico disponível
 Adaptação do Modelo
 -------------------
 
-Nem todos os projectos precisam de uma arquitectura de software com as "4+1" views. Vistas que são inúteis podem ser omitidas da descrição da arquitectura, como a vista fisica, se houver apenas um processador ou até mesmo a vista de processos se apenas existe um unico processo ou programa. Para um sistema muito pequeno, as semelhanças entre a vista de desenvolvimento e a vista lógica são tão grandes que não são necessárias descrições separadas. 
+Nem todos os projectos precisam de uma arquitectura de software com as "4+1" vistas. Vistas que são inúteis podem ser omitidas da descrição da arquitectura, como a vista física, se houver apenas um processador ou até mesmo a vista de processos se apenas existe um único processo ou programa. Para um sistema muito pequeno, as semelhanças entre a vista de desenvolvimento e a vista lógica são tão grandes que não são necessárias descrições separadas. 
 
 Conclusão
 -------------------
-Este modelo "4+1" tem sido utilizado com sucesso em vários projectos grandes, cou ou sem algumas adaptações na sua terminologia. Este modelo permite que os varios *stakeholders* encontrem aquilo que querem saber sobre a arquitectura do software. *System Engineers* vão olhar para a arquitectura através da **vista física**, por seu lado, *end-users*, clientes, *data specialists* vão querer saber da **vista lógica** e por fim, *project managers*, ou equipas de manutenção de software vão prestar atenção na **vista de desenvolvimento**.
+Este modelo "4+1" tem sido utilizado com sucesso em vários projectos grandes, com ou sem adaptações na sua terminologia. Este modelo permite que os vários *stakeholders* encontrem aquilo que querem saber sobre a arquitectura do software. *System Engineers* vão olhar para a arquitectura através da **vista física**, por seu lado, *end-users*, clientes, *data specialists* vão querer saber da **vista lógica** e por fim, *project managers*, ou equipas de manutenção de software vão prestar atenção na **vista de desenvolvimento**.
 
 
 
